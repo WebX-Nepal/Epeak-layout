@@ -1,6 +1,6 @@
 import { Eight } from "../components/8000res/8000res";
 import Workedwith from "../components/WorkedWIth/Workedwith";
-import Footer from "../components/footer/footer";
+import Footer from "../components/footer/Footer";
 import Meaters from "../components/meaters/Meaters";
 import Mountain from "../components/mountain/Mountain";
 import Whyus from "../components/whyus/Whyus";
