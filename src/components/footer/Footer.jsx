@@ -6,7 +6,10 @@ export default function Footer() {
       <div className=" ">
         <img src={wave} alt="" className="  h-10 w-full bg-repeat-x" />
         <div className="bg-[#262626] text-white font-poppins text-sm pb-20">
+
+
           <div className="w-[80vw] py-16 m-auto">
+      <h3 className="text-5xl mb-8 mt-4 text-center font-Cormorant font-semibold">Our Patners</h3>
             <Patners/>
           </div>
           <hr

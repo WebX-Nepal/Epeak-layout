@@ -60,51 +60,25 @@ export const Eight = () => {
   return (
     <section
       id="eight"
-      className="scro h-[110vh] overflow-scroll  w-full bg-[#f7f7f7] font-poppins p-16 "
+      className="   w-full bg-[#f7f7f7] font-poppins p-16 flex  gap-16   "
     >
-      <div className="flex relative scro">
-        <div className="w-[50%] flex flex-col justify-center items-center gap-12 ">
-          <h2 className="text-5xl font-Cormorant font-semibold">
-            <span className="font-poppins font-normal">1</span>4x8000'ers
-          </h2>
-
-          {peaks.map((peak) => {
-            return (
-              <div
-                key={peak.peakName}
-                className=" flex justify-center items-center gap-4"
-              >
-                <div className="w-[100px] h-[100px] border-2 bg-white flex justify-center rounded-full p-2">
-                  <img src={peak.peakPhoto} alt="" className="object-contain" />
-                </div>
-                <div>
-                  <span className="text-sm">{peak.peakHeight}m </span>
-                  <h3 className="text-xl font-semibold">{peak.peakName} </h3>
-                </div>
+      <div className="flex gap-16  overflow-auto">
+        {peaks.map((peak) => {
+          return (
+            <div
+              key={peak.peakName}
+              className="  justify-center items-center  gap-12"
+            >
+              <div className="w-[100px] h-[100px] border-2 bg-white inline-block  justify-center rounded-full p-2">
+                <img src={peak.peakPhoto} alt="" className="object-contain" />
               </div>
-            );
-          })}
-        </div>
-        <div className="w-[59%] ">
-          <div className=" w-[45vw] h-[60vh] sticky top-12 bg-cover rounded-3xl bg-[url('https://images.unsplash.com/3/GoWildImages_MtEverest_NEP0555.jpg?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')]  ">
-            <div className="h-full flex flex-col p-12 gap-8 justify-end ">
-              <p className="text-white font-poppins text-3xl">
-                Mount Everest Expedition Standard | The World's Highest Mountain
-                "
-              </p>
-              <div className="flex gap-4 text-white ">
-                <button className="uppercase px-7 py-3  bg-[#FAB40A] w-[30%] rounded-lg">
-                  {" "}
-                  view details{" "}
-                </button>
-                <button className="uppercase px-7 py-3 bg-[#1664A4] w-[30%] rounded-lg">
-                  {" "}
-                  book now{" "}
-                </button>
+              <div>
+                <span className="text-sm">{peak.peakHeight}m </span>
+                <h3 className="text-xl font-semibold">{peak.peakName} </h3>
               </div>
             </div>
-          </div>
-        </div>
+          );
+        })}
       </div>
     </section>
   );

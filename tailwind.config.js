@@ -8,7 +8,8 @@ export default {
     extend: {},
     fontFamily:{
       'poppins': ['Poppins', 'sans-serif'],
-      'Cormorant':[ 'Cormorant Garamond','sans-serif']
+      'Cormorant':[ 'Cormorant Garamond','sans-serif'],
+      'Rubik':['Rubik Distressed' ,'sans-serif']
     }
   },
   plugins: [],

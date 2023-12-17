@@ -7,17 +7,11 @@ import mountBg from "./assets/mountBg.png";
 import mountFg from "./assets/mountFg.png";
 import mountMg from "./assets/mountMg.png";
 import skyy from "./assets/sky.png";
-import worked from "./workedWith.png";
-import Workedwith from "../WorkedWIth/Workedwith";
-import "./mount.css"
+import "./mount.css";
 export default function Mountain() {
   return (
-    <div className="scro">
-      <Parallax
-        pages={1.1}
-        style={{ top: "0", left: "0" }}
-        className=""
-      >
+    <div className="scro ">
+      <Parallax pages={1.2} style={{ top: "0", left: "0" }} className="">
         <ParallaxLayer offset={0} speed={2.5}>
           <div
             className=" bg-cover bg-center h-screen"
@@ -26,17 +20,25 @@ export default function Mountain() {
         </ParallaxLayer>
         <ParallaxLayer offset={0} speed={0.3}>
           <div
-            className=" bg-cover bg-center h-screen"
+            className=" bg-cover bg-center h-screen   "
             style={{ backgroundImage: `url(${skyy})` }}
           ></div>
         </ParallaxLayer>
-        <ParallaxLayer offset={0} speed={0.4}>
+        <ParallaxLayer offset={0} speed={-0.3 }>
+          <div className="w-[100vw] h-[50vh] fixed top-14  flex items-center justify-center">
+            <h1 className="text-white font-Rubik text-7xl">
+              Welcome to Epeak 
+            </h1>
+          </div>
+        </ParallaxLayer>
+        <ParallaxLayer offset={0} speed={0.1}>
           <div
             className=" bg-cover bg-center h-screen"
             style={{ backgroundImage: `url(${mountBg})` }}
           ></div>
         </ParallaxLayer>
-        <ParallaxLayer offset={0} speed={0.5}>
+
+        <ParallaxLayer offset={0} speed={0.3}>
           <div
             className=" bg-cover bg-center h-screen"
             style={{ backgroundImage: `url(${mountMg})` }}
@@ -48,29 +50,27 @@ export default function Mountain() {
             style={{ backgroundImage: `url(${cloud2})` }}
           ></div>
         </ParallaxLayer>
-        <ParallaxLayer offset={0} speed={0.7}>
+
+        <ParallaxLayer offset={0} speed={0.3}>
           <div
             className=" bg-cover bg-center h-screen"
             style={{ backgroundImage: `url(${mountFg})` }}
           ></div>
         </ParallaxLayer>
-        <ParallaxLayer offset={0} speed={0.8}>
+        <ParallaxLayer offset={0} speed={-0.2}>
           <div
             className=" bg-cover bg-center h-screen"
             style={{ backgroundImage: `url(${cloud1})` }}
           ></div>
         </ParallaxLayer>
 
-        <ParallaxLayer offset={0} speed={2.5}>
+        <ParallaxLayer offset={0} speed={1.1}>
           <div
             className=" bg-cover bg-center h-screen"
             style={{ backgroundImage: `url(${cloud3})` }}
           ></div>
         </ParallaxLayer>
-
-       
       </Parallax>
-
     </div>
   );
 }
