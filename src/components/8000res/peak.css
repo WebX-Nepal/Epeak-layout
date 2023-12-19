@@ -1,3 +1,24 @@
 .scro ::-webkit-scrollbar{
     display: none;
 }
+
+
+#firstHimal:hover{
+
+    stroke: red;
+    cursor: pointer;
+
+}
+
+.firstHimal{
+
+    color: greenyellow;
+    cursor: pointer;
+
+}
+
+#pattern8{
+    color: greenyellow;
+    cursor: pointer;
+
+}

@@ -3,12 +3,17 @@ import { Icon } from "@iconify/react";
 import Company from "./Company";
 import { useState } from "react";
 import Usefulinfo from "./Usefulinfo";
+import Trekking from "./Trekking";
+import Expeditions from "./Expeditions";
+import Search from "./Search";
 
 export default function Navbar() {
   const [show, setShow] = useState(false);
   const [showExpeditions, setShowExpeditions] = useState(false);
   const [showTrekking, setShowTrekking] = useState(false);
   const [showUseful, setShowUseful] = useState(false);
+
+  const [search,setSearch] = useState(false)
   return (
     <>
       <div className="absolute z-10 flex w-full justify-around items-center p-2 gap-52 bg-[#256195] bg-opacity-70">
@@ -17,7 +22,7 @@ export default function Navbar() {
         </div>
         <div className="">
           <ul className="font-poppins font-light flex gap-8 text-white text-lg items-center">
-            <li className="">Home</li>
+            <li className="cursor-pointer">Home</li>
             <li
               onMouseEnter={() => setShow(true)}
               onMouseLeave={() => setShow(false)}
@@ -26,23 +31,35 @@ export default function Navbar() {
               Company
               <Icon width={13} icon="teenyicons:down-outline" />
             </li>
-            <li className="flex items-center gap-1 ">
+            <li
+              onMouseEnter={() => setShowExpeditions(true)}
+              onMouseLeave={() => setShowExpeditions(false)}
+              className="cursor-pointer flex items-center gap-1 h-20"
+            >
               Expeditions <Icon width={13} icon="teenyicons:down-outline" />
             </li>
             <li
-       
-              className="flex items-center gap-1"
+              onMouseEnter={() => setShowTrekking(true)}
+              onMouseLeave={() => setShowTrekking(false)}
+              className="cursor-pointer flex items-center gap-1 h-20"
             >
               Trekking
               <Icon width={13} icon="teenyicons:down-outline" />
             </li>
-            <li        onMouseEnter={() => setShowUseful(true)}
-              onMouseLeave={() => setShowUseful(false)} className="flex items-center gap-1 h-20">
+            <li
+              onMouseEnter={() => setShowUseful(true)}
+              onMouseLeave={() => setShowUseful(false)}
+              className="cursor-pointer flex items-center gap-1 h-20"
+            >
               <span className="inline-block">Useful Info</span>{" "}
               <Icon width={13} icon="teenyicons:down-outline" />
             </li>
+            <li className="cursor-pointer flex items-center gap-1">
+              <span className="inline-block">Other Activities</span>{" "}
+              <Icon width={13} icon="teenyicons:down-outline" />
+            </li>
             <li>Contact Us</li>
-            <li>
+            <li className="cursor-pointer" onClick={()=>{setSearch(true); console.log(search)} }>
               <Icon icon="iconamoon:search-light" />
             </li>
           </ul>
@@ -51,6 +68,13 @@ export default function Navbar() {
 
       {show && <Company setShow={setShow} />}
       {showUseful && <Usefulinfo setShowUseful={setShowUseful} />}
+      {showTrekking && <Trekking setShowTrekking={setShowTrekking} />}
+
+      {showExpeditions && <Expeditions setShowExpeditions={setShowExpeditions} />}
+
+      {
+        search && <Search setSearch={setSearch}/>
+      }
     </>
   );
 }
