@@ -19,7 +19,7 @@ export default function Navbar() {
   const [search, setSearch] = useState(false);
   return (
     <>
-      <div  className="fixed backdrop-blur-md top-0 z-10 flex w-full justify-around items-center p-2 gap-52 bg-[#256195]  bg-opacity-70">
+      <div  className="fixed backdrop-blur-sm top-0 z-10 flex w-full justify-around items-center p-2 gap-52 bg-[#256195]  bg-opacity-70">
         <div className="w-48 ">
           <img src={Logo} alt="" />{" "}
         </div>
