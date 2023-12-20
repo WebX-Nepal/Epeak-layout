@@ -6,6 +6,7 @@ import Usefulinfo from "./Usefulinfo";
 import Trekking from "./Trekking";
 import Expeditions from "./Expeditions";
 import Search from "./Search";
+import { Link } from "react-router-dom";
 
 export default function Navbar() {
   const [show, setShow] = useState(false);
@@ -13,16 +14,18 @@ export default function Navbar() {
   const [showTrekking, setShowTrekking] = useState(false);
   const [showUseful, setShowUseful] = useState(false);
 
-  const [search,setSearch] = useState(false)
+  const [search, setSearch] = useState(false);
   return (
     <>
-      <div className="absolute z-10 flex w-full justify-around items-center p-2 gap-52 bg-[#256195] bg-opacity-70">
+      <div className="fixed top-0 z-10 flex w-full justify-around items-center p-2 gap-52 bg-[#256195] bg-opacity-70">
         <div className="w-48 ">
           <img src={Logo} alt="" />{" "}
         </div>
         <div className="">
           <ul className="font-poppins font-light flex gap-8 text-white text-lg items-center">
-            <li className="cursor-pointer">Home</li>
+            <Link  to="/" onClick={()=>scrollTo(0,0)}>
+              <li className="cursor-pointer">Home</li>
+            </Link>
             <li
               onMouseEnter={() => setShow(true)}
               onMouseLeave={() => setShow(false)}
@@ -59,7 +62,13 @@ export default function Navbar() {
               <Icon width={13} icon="teenyicons:down-outline" />
             </li>
             <li>Contact Us</li>
-            <li className="cursor-pointer" onClick={()=>{setSearch(true); console.log(search)} }>
+            <li
+              className="cursor-pointer"
+              onClick={() => {
+                setSearch(true);
+                console.log(search);
+              }}
+            >
               <Icon icon="iconamoon:search-light" />
             </li>
           </ul>
@@ -70,11 +79,11 @@ export default function Navbar() {
       {showUseful && <Usefulinfo setShowUseful={setShowUseful} />}
       {showTrekking && <Trekking setShowTrekking={setShowTrekking} />}
 
-      {showExpeditions && <Expeditions setShowExpeditions={setShowExpeditions} />}
+      {showExpeditions && (
+        <Expeditions setShowExpeditions={setShowExpeditions} />
+      )}
 
-      {
-        search && <Search setSearch={setSearch}/>
-      }
+      {search && <Search setSearch={setSearch} />}
     </>
   );
 }

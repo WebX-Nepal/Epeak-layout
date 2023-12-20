@@ -1,3 +1,6 @@
+import { Link } from "react-router-dom";
+
+
 export default function Expeditions({ setShowExpeditions }) {
   return (
     <div
@@ -13,11 +16,11 @@ export default function Expeditions({ setShowExpeditions }) {
         <span>VIP & LUXURY SERVICE</span>
       </div>
       <div className="w-[80%] flex flex-wrap gap-8 uppercase text-xl  font-semibold ">
-        <div className="overflow-hidden  p-4 flex justify-center items-center rounded-md cursor-pointer w-[300px]  h-[220px] bg-cover bg-[url('https://www.sevensummittreks.com/uploads/original/1651467803_broad-peak-kGZ0BbXhROzifvzanFk2u9S8TQR4DLrcumBtDjn9.jpg')]">
+        <Link  to="/everest" className="overflow-hidden  p-4 flex justify-center items-center rounded-md cursor-pointer w-[300px]  h-[220px] bg-cover bg-[url('https://www.sevensummittreks.com/uploads/original/1651467803_broad-peak-kGZ0BbXhROzifvzanFk2u9S8TQR4DLrcumBtDjn9.jpg')]">
           <p className="uppercase  text-[#f2ba37] hover:scale-125 transition-all duration-300 hover:text-[#f2ba37]">
             8000ers
           </p>
-        </div>
+        </Link>
         <div className="p-4 flex justify-center items-center rounded-md  cursor-pointer w-[300px] h-[220px] bg-cover bg-[url('https://i0.wp.com/intrepidtreks.com/en/wp-content/uploads/2018/03/Tilicho-Lake-trek-Annapurna1.jpg?fit=1140%2C760')]">
           7000ers
         </div>
