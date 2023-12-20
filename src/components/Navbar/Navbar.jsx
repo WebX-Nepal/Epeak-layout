@@ -7,17 +7,19 @@ import Trekking from "./Trekking";
 import Expeditions from "./Expeditions";
 import Search from "./Search";
 import { Link } from "react-router-dom";
+import OtherActivities from "./OtherActivities";
 
 export default function Navbar() {
   const [show, setShow] = useState(false);
   const [showExpeditions, setShowExpeditions] = useState(false);
   const [showTrekking, setShowTrekking] = useState(false);
   const [showUseful, setShowUseful] = useState(false);
+  const [showActivity,setShowActivity] = useState(false)
 
   const [search, setSearch] = useState(false);
   return (
     <>
-      <div className="fixed top-0 z-10 flex w-full justify-around items-center p-2 gap-52 bg-[#256195] bg-opacity-70">
+      <div  className="fixed backdrop-blur-md top-0 z-10 flex w-full justify-around items-center p-2 gap-52 bg-[#256195]  bg-opacity-70">
         <div className="w-48 ">
           <img src={Logo} alt="" />{" "}
         </div>
@@ -57,17 +59,17 @@ export default function Navbar() {
               <span className="inline-block">Useful Info</span>{" "}
               <Icon width={13} icon="teenyicons:down-outline" />
             </li>
-            <li className="cursor-pointer flex items-center gap-1">
+            <li className="cursor-pointer flex items-center gap-1 h-20" 
+             onMouseEnter={() => setShowActivity(true)}
+             onMouseLeave={() => setShowActivity(false)}
+            >
               <span className="inline-block">Other Activities</span>{" "}
               <Icon width={13} icon="teenyicons:down-outline" />
             </li>
             <li>Contact Us</li>
             <li
               className="cursor-pointer"
-              onClick={() => {
-                setSearch(true);
-                console.log(search);
-              }}
+            
             >
               <Icon icon="iconamoon:search-light" />
             </li>
@@ -82,6 +84,9 @@ export default function Navbar() {
       {showExpeditions && (
         <Expeditions setShowExpeditions={setShowExpeditions} />
       )}
+      {
+        showActivity && <OtherActivities setShowActivity={setShowActivity}/>
+      }
 
       {search && <Search setSearch={setSearch} />}
     </>
