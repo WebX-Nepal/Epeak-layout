@@ -3,10 +3,15 @@ export default function OtherActivities({ setShowActivity }) {
     <div
       onMouseEnter={() => setShowActivity(true)}
       onMouseLeave={() => setShowActivity(false)}
-      className="absolute bg-opacity-75 bg-[#023047] z-10 top-20  right-36
-      font-poppins text-white px-16 py-8 flex"
+      className="sticky w-full  z-10 top-24  right-36
+      font-poppins text-white   flex"
     >
-      <ul className="flex flex-col justify-center gap-4"> 
+      <div className="w-[75%]"></div>
+      <ul
+        onMouseEnter={() => setShowActivity(true)}
+        onMouseLeave={() => setShowActivity(false)}
+        className="flex flex-col w-[330px] justify-center gap-4  p-8  bg-opacity-75 bg-[#023047]"
+      >
         <li className="cursor-pointer">Mountain Bike</li>
         <li className="cursor-pointer">Heli Tours</li>
         <li className="cursor-pointer">City Tour</li>

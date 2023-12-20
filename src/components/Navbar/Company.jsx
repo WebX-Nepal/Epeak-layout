@@ -6,7 +6,7 @@ export default function Company({ setShow }) {
     <div
       onMouseEnter={() => setShow(true)}
       onMouseLeave={() => setShow(false)}
-      className="  sticky top-10   flex justify-around items-start p-8 w-[99%] h-[30vh]  bg-opacity-75 bg-[#023047] z-10 top-20 text-white font-poppins"
+      className="  sticky w-full   flex justify-around items-start p-8 w-[99%] h-[30vh]  bg-opacity-75 bg-[#023047] z-10 top-24 text-white font-poppins"
     >
       <div className="flex flex-col gap-4">
         <h3>Why with us?</h3>

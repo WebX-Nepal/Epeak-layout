@@ -31,7 +31,7 @@ export default function Navbar() {
             <li
               onMouseEnter={() => setShow(true)}
               onMouseLeave={() => setShow(false)}
-              className={`cursor-pointer flex items-center gap-1  h-20`}
+              className={`cursor-pointer flex items-center gap-1  h-24`}
             >
               Company
               <Icon width={13} icon="teenyicons:down-outline" />
@@ -39,14 +39,14 @@ export default function Navbar() {
             <li
               onMouseEnter={() => setShowExpeditions(true)}
               onMouseLeave={() => setShowExpeditions(false)}
-              className="cursor-pointer flex items-center gap-1 h-20"
+              className="cursor-pointer flex items-center gap-1 h-24"
             >
               Expeditions <Icon width={13} icon="teenyicons:down-outline" />
             </li>
             <li
               onMouseEnter={() => setShowTrekking(true)}
               onMouseLeave={() => setShowTrekking(false)}
-              className="cursor-pointer flex items-center gap-1 h-20"
+              className="cursor-pointer flex items-center gap-1 h-24"
             >
               Trekking
               <Icon width={13} icon="teenyicons:down-outline" />
@@ -54,12 +54,12 @@ export default function Navbar() {
             <li
               onMouseEnter={() => setShowUseful(true)}
               onMouseLeave={() => setShowUseful(false)}
-              className="cursor-pointer flex items-center gap-1 h-20"
+              className="cursor-pointer flex items-center gap-1 h-24"
             >
               <span className="inline-block">Useful Info</span>{" "}
               <Icon width={13} icon="teenyicons:down-outline" />
             </li>
-            <li className="cursor-pointer flex items-center gap-1 h-20" 
+            <li className="cursor-pointer flex items-center gap-1 h-24" 
              onMouseEnter={() => setShowActivity(true)}
              onMouseLeave={() => setShowActivity(false)}
             >

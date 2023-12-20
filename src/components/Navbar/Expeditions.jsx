@@ -6,7 +6,7 @@ export default function Expeditions({ setShowExpeditions }) {
     <div
       onMouseEnter={() => setShowExpeditions(true)}
       onMouseLeave={() => setShowExpeditions(false)}
-      className="absolute bg-opacity-75 bg-[#023047] z-10 top-20  w-full font-poppins text-white px-32 py-8 flex"
+      className="sticky bg-opacity-75 bg-[#023047] z-10 top-24  w-full font-poppins text-white px-32 py-8 flex"
     >
       <div className="flex flex-col mt-4 gap-2 w-[20%] cursor-pointer">
         <span> 8000ers</span>
