@@ -14,81 +14,77 @@ export default function Navbar() {
   const [showExpeditions, setShowExpeditions] = useState(false);
   const [showTrekking, setShowTrekking] = useState(false);
   const [showUseful, setShowUseful] = useState(false);
-  const [showActivity,setShowActivity] = useState(false)
+  const [showActivity, setShowActivity] = useState(false);
 
   const [search, setSearch] = useState(false);
   return (
     <>
-      <div  className="fixed backdrop-blur-sm top-0 z-10 flex w-full justify-around items-center p-2 gap-52 bg-[#256195]  bg-opacity-70">
-        <div className="w-48 ">
+      <div className="fixed backdrop-blur-sm top-0 z-10 flex w-full justify-around items-center px-2 gap-52 bg-[#256195]  bg-opacity-70">
+        <div className="w-48  ">
           <img src={Logo} alt="" />{" "}
         </div>
         <div className="">
-          <ul className="font-poppins font-light flex gap-8 text-white text-lg items-center">
-            <Link  to="/" onClick={()=>scrollTo(0,0)}>
+          <ul className="font-poppins font-light flex gap-6 text-white text-lg items-center ">
+            <Link to="/" onClick={() => scrollTo(0, 0)}>
               <li className="cursor-pointer">Home</li>
             </Link>
             <li
               onMouseEnter={() => setShow(true)}
               onMouseLeave={() => setShow(false)}
-              className={`cursor-pointer flex items-center gap-1  h-24`}
+              className={`cursor-pointer flex items-center gap-1  h-20 `}
             >
               Company
               <Icon width={13} icon="teenyicons:down-outline" />
+              {show && <Company setShow={setShow} />}
             </li>
             <li
               onMouseEnter={() => setShowExpeditions(true)}
               onMouseLeave={() => setShowExpeditions(false)}
-              className="cursor-pointer flex items-center gap-1 h-24"
+              className="cursor-pointer flex items-center gap-1 h-20"
             >
               Expeditions <Icon width={13} icon="teenyicons:down-outline" />
+              {showExpeditions && (
+                <Expeditions setShowExpeditions={setShowExpeditions} />
+              )}
             </li>
             <li
               onMouseEnter={() => setShowTrekking(true)}
               onMouseLeave={() => setShowTrekking(false)}
-              className="cursor-pointer flex items-center gap-1 h-24"
+              className="cursor-pointer flex items-center gap-1 h-20"
             >
               Trekking
               <Icon width={13} icon="teenyicons:down-outline" />
+              {showTrekking && <Trekking setShowTrekking={setShowTrekking} />}
+            </li>
+
+            <li
+              className="cursor-pointer flex items-center gap-1 h-20 "
+              onMouseEnter={() => setShowActivity(true)}
+              onMouseLeave={() => setShowActivity(false)}
+            >
+              <span className="inline-block">Other Activities</span>{" "}
+              <Icon width={13} icon="teenyicons:down-outline" />
+              {showActivity && (
+                <OtherActivities setShowActivity={setShowActivity} />
+              )}
             </li>
             <li
               onMouseEnter={() => setShowUseful(true)}
               onMouseLeave={() => setShowUseful(false)}
-              className="cursor-pointer flex items-center gap-1 h-24"
+              className="cursor-pointer flex items-center gap-1 h-20 "
             >
-              <span className="inline-block">Useful Info</span>{" "}
+              <span className="inline-block ">Useful Info</span>{" "}
               <Icon width={13} icon="teenyicons:down-outline" />
-            </li>
-            <li className="cursor-pointer flex items-center gap-1 h-24" 
-             onMouseEnter={() => setShowActivity(true)}
-             onMouseLeave={() => setShowActivity(false)}
-            >
-              <span className="inline-block">Other Activities</span>{" "}
-              <Icon width={13} icon="teenyicons:down-outline" />
+              {showUseful && <Usefulinfo setShowUseful={setShowUseful} />}
             </li>
             <li>Contact Us</li>
-            <li
-              className="cursor-pointer"
-            
-            >
+            <li className="cursor-pointer" onClick={() => setSearch(!search)}>
               <Icon icon="iconamoon:search-light" />
+              {search && <Search setSearch={setSearch} />}
             </li>
           </ul>
         </div>
       </div>
-
-      {show && <Company setShow={setShow} />}
-      {showUseful && <Usefulinfo setShowUseful={setShowUseful} />}
-      {showTrekking && <Trekking setShowTrekking={setShowTrekking} />}
-
-      {showExpeditions && (
-        <Expeditions setShowExpeditions={setShowExpeditions} />
-      )}
-      {
-        showActivity && <OtherActivities setShowActivity={setShowActivity}/>
-      }
-
-      {search && <Search setSearch={setSearch} />}
     </>
   );
 }

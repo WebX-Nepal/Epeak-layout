@@ -25,7 +25,7 @@ export const Eight = () => {
 
   return (
     <section className={`w-full    flex items-center relative`}>
-      <div className="px-40 grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 border w-full">
+      <div className="px-40 grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 max-sm:grid-cols-1 border w-full">
         <div
           className="w-[220px] cursor-pointer relative"
           onMouseEnter={() => {
