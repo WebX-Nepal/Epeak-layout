@@ -11,7 +11,7 @@ export default function RightStickyCard() {
       <div className="border bg-[#444] w-[60%] mt-4 mx-auto h-40 flex flex-col gap-4 justify-center items-center ">
         <div className=" ">
           <button className=" flex justify-center items-center bg-white text-[#215D91]  px-5 py-2">
-            <span>Inquiry</span>
+            <span>Inquiry </span>
             <Icon icon="ph:arrow-right-light" />
           </button>
         </div>
