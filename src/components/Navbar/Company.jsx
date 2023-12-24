@@ -6,23 +6,22 @@ export default function Company({ setShow }) {
     <div
       onMouseEnter={() => setShow(true)}
       onMouseLeave={() => setShow(false)}
-      className="  absolute w-[100%] left-0  flex justify-around items-start p-8  h-[30vh]  bg-opacity-75 bg-[#023047] z-10 top-20   text-white font-poppins"
+      className="bg-[#023047]  absolute w-[60%] left-96  flex justify-around items-start p-8  h-[30vh]  rounded-sm  z-10 top-20   text-white font-poppins"
     >
-      <div className="flex flex-col gap-4">
+      {/* <div className="flex flex-col gap-4">
         <h3>Why with us?</h3>
         <h3>Who we are?</h3>
         <h3>Awards</h3>
         <h3>Our Patrons</h3>
-      </div>
+      </div> */}
 
       <div className="flex flex-col gap-4">
+        <h3>About Us</h3>
         <h3>Chairman's Message</h3>
-        <h3>About Chairmam</h3>
         <h3>Our Team</h3>
         <h3>Certificates & Documents</h3>
       </div>
       <div className="flex flex-col gap-4">
-        <h3>Reviews</h3>
         <h3>Our Blog</h3>
         <h3>Attoeney</h3>
       </div>
