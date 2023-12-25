@@ -77,7 +77,10 @@ export default function Navbar() {
               <Icon width={13} icon="teenyicons:down-outline" />
               {showUseful && <Usefulinfo setShowUseful={setShowUseful} />}
             </li>
+
+            <Link to="/contactus">
             <li>Contact Us</li>
+            </Link>
             <li className="cursor-pointer" onClick={() => setSearch(!search)}>
               <Icon icon="iconamoon:search-light" />
               {search && <Search setSearch={setSearch} />}

@@ -2,6 +2,7 @@ import { Icon } from "@iconify/react";
 import everestlevel from "../assets/everest/everestlevel.svg";
 import Navbar from "../components/Navbar/Navbar";
 import Footer from "../components/footer/Footer";
+import Snowfall from "react-snowfall";
 export default function Everestdetails() {
  
   
@@ -164,6 +165,7 @@ export default function Everestdetails() {
       <div className="text-white font-poppins " >
       <Navbar />
         <div className=" h-[100vh] w-full bg-[url('https://images.unsplash.com/photo-1437382944886-45a9f73d4158?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-center bg- ">
+          <Snowfall snowflakeCount={250} wind={[-1,4]} radius={[0.7,1.5]}/>
           <div className="h-full w-full bg-black/30  flex flex-col justify-end px-40 py-28 gap-8 ">
             <h2 className="font-poppins font-semibold text-5xl text-slate-100">
               MT. EVEREST EXPEDITION (8848.86M) - SOUTH

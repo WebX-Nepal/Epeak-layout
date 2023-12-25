@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-import { Link, useNavigate } from "react-router-dom";
+import {  useNavigate } from "react-router-dom";
 import annapurna from "./assets/ANNAPURNAI.jpg";
 import choyou from "./assets/choyou.jpg";
 import dhaulagiri from "./assets/DHAULAGIRI.jpg";
@@ -108,7 +108,6 @@ const mountainSix = [
   },
 ];
 
-const mountainOthers = [{}];
 export default function Expeditions({ setShowExpeditions }) {
   const navigate = useNavigate();
   const [showMountain, setShowMountain] = useState("8000");
@@ -144,13 +143,7 @@ export default function Expeditions({ setShowExpeditions }) {
           >
             6000 meters
           </li>
-          <li
-            className={`border-b cursor-pointer px-5 py-1 mt-4 ${
-              showMountain === "other" ? "text-blue-400" : ""
-            }`}
-          >
-            Other
-          </li>
+          
         </ul>
         {/* <span>7 Summits</span>
         <span>VIP & LUXURY SERVICE</span> */}

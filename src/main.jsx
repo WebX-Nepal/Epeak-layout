@@ -14,6 +14,12 @@ import FixedDeparture from "./pages/UsefulInfo/FixedDeparture.jsx";
 import VisaProcedure from "./pages/UsefulInfo/VisaProcedure.jsx";
 import InquiryBookPayment from "./pages/UsefulInfo/InquiryBookPayment.jsx";
 import FAQ from "./pages/UsefulInfo/FAQ.jsx";
+import HeliTours from "./pages/OtherActivities/HeliTours.jsx";
+import Paragliding from "./pages/OtherActivities/Paragliding.jsx";
+import MountaibBike from "./pages/OtherActivities/MountaibBike.jsx";
+import CityTour from "./pages/OtherActivities/CityTour.jsx";
+import Aboutus from "./pages/company/Aboutus.jsx";
+import ContactUs from "./pages/ContactUs.jsx";
 ReactDOM.createRoot(document.getElementById("root")).render(
   <BrowserRouter>
     <React.StrictMode>
@@ -31,6 +37,16 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         <Route element={<VisaProcedure/>} path="/visa-procedure"></Route>
         <Route element={<InquiryBookPayment/>} path="/inquiry-booking-payment"></Route>
         <Route element={<FAQ></FAQ>} path="/FAQ"></Route>
+
+        {/* Other activities */}
+        <Route element={<HeliTours/>} path="/helitours"></Route>
+        <Route element={<Paragliding/>} path="/paragliding"></Route>
+        <Route element={<MountaibBike/>} path="/mountain-bike"></Route>
+        <Route element={<CityTour/>} path="/citytour"></Route>
+        {/* company */}
+        <Route element={<Aboutus/>} path="/aboutus"></Route>
+        <Route element={<ContactUs/>} path="/contactus"></Route>
+        
       </Routes>
     </React.StrictMode>
   </BrowserRouter>

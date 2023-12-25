@@ -1,7 +1,11 @@
 /* eslint-disable react/prop-types */
-
+import { Link } from "react-router-dom";
 import { Icon } from "@iconify/react";
 export default function Company({ setShow }) {
+
+  function gotop(){
+    scrollTo(0,0)
+  }
   return (
     <div
       onMouseEnter={() => setShow(true)}
@@ -16,14 +20,16 @@ export default function Company({ setShow }) {
       </div> */}
 
       <div className="flex flex-col gap-4">
+        <Link to="/aboutus" onClick={gotop}>
         <h3>About Us</h3>
+        </Link>
         <h3>Chairman's Message</h3>
         <h3>Our Team</h3>
         <h3>Certificates & Documents</h3>
       </div>
       <div className="flex flex-col gap-4">
         <h3>Our Blog</h3>
-        <h3>Attoeney</h3>
+        <h3>Attorney</h3>
       </div>
 
       <div className="flex gap-4 flex-col items-center justify-center">
