@@ -25,7 +25,7 @@ export const Eight = () => {
 
   return (
     <section className={`w-full    flex items-center relative`}>
-      <div className="px-40 grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 max-sm:grid-cols-1 border w-full">
+      <div className="px-40 max-md:pl-24 grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 max-sm:grid-cols-1 border w-full">
         <div
           className="w-[220px] cursor-pointer relative"
           onMouseEnter={() => {
@@ -98,7 +98,7 @@ export const Eight = () => {
               height={"  8091"}
             />
           )}
-          
+
           <img src={k2} alt="" />
         </div>
         <div
@@ -119,13 +119,15 @@ export const Eight = () => {
           )}
           <img src={lhotse} alt="" />
         </div>
-        <div className="w-[220px] cursor-pointer relative "
-        onMouseEnter={() => {
-          setShowManaslu(true);
-        }}
-        onMouseLeave={() => {
-          setShowManaslu(false);
-        }}>
+        <div
+          className="w-[220px] cursor-pointer relative "
+          onMouseEnter={() => {
+            setShowManaslu(true);
+          }}
+          onMouseLeave={() => {
+            setShowManaslu(false);
+          }}
+        >
           <img src={k2} alt="" />
           {showManaslu && (
             <Mcard
@@ -144,7 +146,7 @@ export const Eight = () => {
             setShowMalaku(false);
           }}
         >
-            {showMakalu && (
+          {showMakalu && (
             <Mcard
               name={"Makalu"}
               subTitle={"submit your dream with us"}
@@ -161,13 +163,15 @@ export const Eight = () => {
           onMouseLeave={() => {
             setShowChooyu(false);
           }}
-        >  {showChooyu && (
-          <Mcard
-            name={"Annapurna"}
-            subTitle={"submit your dream with us"}
-            height={"  8291"}
-          />
-        )}
+        >
+          {" "}
+          {showChooyu && (
+            <Mcard
+              name={"Annapurna"}
+              subTitle={"submit your dream with us"}
+              height={"  8291"}
+            />
+          )}
           <img src={Chooyu} alt="" />
         </div>
       </div>

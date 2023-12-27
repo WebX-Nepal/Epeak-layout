@@ -108,20 +108,18 @@ export default function ContactUs() {
             </div>
 
             <div>
-<label htmlFor="">
-Experience Level
-</label>
-            <Select
-              defaultValue={selectedOption}
-              onChange={setSelectedOption}
-              options={options}
-              className=" focus:outline-fuchsia-600"
-              classNames={{
-                control: (state) =>
-                  state.isFocused ? 'border-red-600' : 'border-grey-300',
-              }}
+              <label htmlFor="">Experience Level</label>
+              <Select
+                defaultValue={selectedOption}
+                onChange={setSelectedOption}
+                options={options}
+                className=" focus:outline-fuchsia-600"
+                classNames={{
+                  control: (state) =>
+                    state.isFocused ? "border-red-600" : "border-grey-300",
+                }}
               />
-              </div>
+            </div>
 
             <div></div>
           </div>

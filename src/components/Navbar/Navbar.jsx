@@ -20,10 +20,14 @@ export default function Navbar() {
   return (
     <>
       <div className="fixed backdrop-blur-sm top-0 z-10 flex w-full justify-around items-center px-2 gap-52 bg-[#256195]  bg-opacity-70">
-        <div className="w-48  ">
+        <div className="w-48 p-1  ">
           <img src={Logo} alt="" />{" "}
         </div>
-        <div className="">
+
+        <div className="lg:hidden">
+        <Icon color="white" width={25} icon="pajamas:hamburger" />
+        </div>
+        <div className="max-lg:hidden">
           <ul className="font-poppins font-light flex gap-6 text-white text-lg items-center ">
             <Link to="/" onClick={() => scrollTo(0, 0)}>
               <li className="cursor-pointer">Home</li>
@@ -62,7 +66,7 @@ export default function Navbar() {
               onMouseEnter={() => setShowActivity(true)}
               onMouseLeave={() => setShowActivity(false)}
             >
-              <span className="inline-block">Other Activities</span>{" "}
+              <span className="whitespace-nowrap">Other Activities</span>{" "}
               <Icon width={13} icon="teenyicons:down-outline" />
               {showActivity && (
                 <OtherActivities setShowActivity={setShowActivity} />
@@ -73,13 +77,13 @@ export default function Navbar() {
               onMouseLeave={() => setShowUseful(false)}
               className="cursor-pointer flex items-center gap-1 h-20 "
             >
-              <span className="inline-block ">Useful Info</span>{" "}
+              <span className="whitespace-nowrap">Useful Info</span>{" "}
               <Icon width={13} icon="teenyicons:down-outline" />
               {showUseful && <Usefulinfo setShowUseful={setShowUseful} />}
             </li>
 
             <Link to="/contactus">
-            <li>Contact Us</li>
+            <li className="whitespace-nowrap">Contact Us</li>
             </Link>
             <li className="cursor-pointer" onClick={() => setSearch(!search)}>
               <Icon icon="iconamoon:search-light" />

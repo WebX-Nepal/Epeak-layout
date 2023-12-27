@@ -2,9 +2,8 @@
 import { Link } from "react-router-dom";
 import { Icon } from "@iconify/react";
 export default function Company({ setShow }) {
-
-  function gotop(){
-    scrollTo(0,0)
+  function gotop() {
+    scrollTo(0, 0);
   }
   return (
     <div
@@ -21,9 +20,11 @@ export default function Company({ setShow }) {
 
       <div className="flex flex-col gap-4">
         <Link to="/aboutus" onClick={gotop}>
-        <h3>About Us</h3>
+          <h3>About Us</h3>
         </Link>
-        <h3>Chairman's Message</h3>
+        <Link to="/chairman-message" onClick={gotop}>
+          <h3>Chairman's Message</h3>
+        </Link>
         <h3>Our Team</h3>
         <h3>Certificates & Documents</h3>
       </div>

@@ -24,10 +24,10 @@ export default function Mountain() {
             style={{ backgroundImage: `url(${skyy})` }}
           ></div>
         </ParallaxLayer>
-        <ParallaxLayer offset={0} speed={-0.3 }>
+        <ParallaxLayer offset={0} speed={-0.3}>
           <div className="w-[100vw] h-[50vh] fixed top-14  flex items-center justify-center">
-            <h1 className="text-white font-Rubik text-7xl">
-              Welcome to Epeak 
+            <h1 className="text-white font-Rubik text-7xl max-sm:text-5xl max-sm:px-8 max-lg:text-6xl">
+              Welcome to Epeak
             </h1>
           </div>
         </ParallaxLayer>

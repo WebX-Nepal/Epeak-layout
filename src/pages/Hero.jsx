@@ -1,5 +1,6 @@
 import { Eight } from "../components/8000res/8000res";
 import Navbar from "../components/Navbar/Navbar";
+import Testimonial from "../components/Testimonial/Testimonial";
 import Workedwith from "../components/WorkedWIth/Workedwith";
 import Footer from "../components/footer/Footer";
 import Meaters from "../components/meaters/Meaters";
@@ -15,6 +16,7 @@ export default function Hero() {
    <Meaters/>
    <Eight/>
    <Whyus/>
+   <Testimonial/>
    <Footer/>
     
   </>

@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App.jsx";
 import "./index.css";
-import { Route, Routes,BrowserRouter } from "react-router-dom";
+import { Route, Routes, BrowserRouter } from "react-router-dom";
 import Navbar from "./components/Navbar/Navbar.jsx";
 import Everestdetails from "./pages/Everestdetails.jsx";
 import Dhaulagiri from "./pages/Dhaulagiri.jsx";
@@ -20,33 +20,42 @@ import MountaibBike from "./pages/OtherActivities/MountaibBike.jsx";
 import CityTour from "./pages/OtherActivities/CityTour.jsx";
 import Aboutus from "./pages/company/Aboutus.jsx";
 import ContactUs from "./pages/ContactUs.jsx";
+import ChairmanMessage from "./pages/company/ChairmanMessage.jsx";
+import OurTeam from "./pages/company/OurTeam.jsx";
 ReactDOM.createRoot(document.getElementById("root")).render(
   <BrowserRouter>
     <React.StrictMode>
       {/* <Navbar/> */}
       <Routes>
         <Route element={<App />} path="/"></Route>
-        <Route element={<Everestdetails/>} path="/everest"></Route>
-        <Route element={<Dhaulagiri/>} path="/dhaulagiri"></Route>
+        <Route element={<Everestdetails />} path="/everest"></Route>
+        <Route element={<Dhaulagiri />} path="/dhaulagiri"></Route>
         {/* useful info */}
-        <Route element={<GearList/>} path="/gearlist"></Route>
-        <Route element={<TermsAndConditions/>} path="/terms-and-conditon"></Route>
-        <Route element={<Garbage/>} path="/garbage"></Route>
-        <Route element={<TravelAdvisory/>} path="/travel-advisory"></Route>
-        <Route element={<FixedDeparture/>} path="/fixed-departure"></Route>
-        <Route element={<VisaProcedure/>} path="/visa-procedure"></Route>
-        <Route element={<InquiryBookPayment/>} path="/inquiry-booking-payment"></Route>
+        <Route element={<GearList />} path="/gearlist"></Route>
+        <Route
+          element={<TermsAndConditions />}
+          path="/terms-and-conditon"
+        ></Route>
+        <Route element={<Garbage />} path="/garbage"></Route>
+        <Route element={<TravelAdvisory />} path="/travel-advisory"></Route>
+        <Route element={<FixedDeparture />} path="/fixed-departure"></Route>
+        <Route element={<VisaProcedure />} path="/visa-procedure"></Route>
+        <Route
+          element={<InquiryBookPayment />}
+          path="/inquiry-booking-payment"
+        ></Route>
         <Route element={<FAQ></FAQ>} path="/FAQ"></Route>
 
         {/* Other activities */}
-        <Route element={<HeliTours/>} path="/helitours"></Route>
-        <Route element={<Paragliding/>} path="/paragliding"></Route>
-        <Route element={<MountaibBike/>} path="/mountain-bike"></Route>
-        <Route element={<CityTour/>} path="/citytour"></Route>
+        <Route element={<HeliTours />} path="/helitours"></Route>
+        <Route element={<Paragliding />} path="/paragliding"></Route>
+        <Route element={<MountaibBike />} path="/mountain-bike"></Route>
+        <Route element={<CityTour />} path="/citytour"></Route>
         {/* company */}
-        <Route element={<Aboutus/>} path="/aboutus"></Route>
-        <Route element={<ContactUs/>} path="/contactus"></Route>
-        
+        <Route element={<Aboutus />} path="/aboutus"></Route>
+        <Route element={<ContactUs />} path="/contactus"></Route>
+        <Route element={<ChairmanMessage />} path="/chairman-message"></Route>
+        <Route element={<OurTeam />} path="/our-team" />
       </Routes>
     </React.StrictMode>
   </BrowserRouter>
