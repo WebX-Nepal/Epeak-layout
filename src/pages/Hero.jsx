@@ -6,10 +6,12 @@ import Footer from "../components/footer/Footer";
 import Meaters from "../components/meaters/Meaters";
 import Mountain from "../components/mountain/Mountain";
 import Whyus from "../components/whyus/Whyus";
+import Snowfall from "react-snowfall";
 export default function Hero() {
   return (<>
   <Navbar/>
     <div className="border border-red-500">
+
       <Mountain />
     </div>
     <Workedwith/>

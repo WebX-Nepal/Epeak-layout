@@ -22,10 +22,13 @@ import Aboutus from "./pages/company/Aboutus.jsx";
 import ContactUs from "./pages/ContactUs.jsx";
 import ChairmanMessage from "./pages/company/ChairmanMessage.jsx";
 import OurTeam from "./pages/company/OurTeam.jsx";
+import Snowfall from "react-snowfall";
 ReactDOM.createRoot(document.getElementById("root")).render(
   <BrowserRouter>
     <React.StrictMode>
       {/* <Navbar/> */}
+
+
       <Routes>
         <Route element={<App />} path="/"></Route>
         <Route element={<Everestdetails />} path="/everest"></Route>
