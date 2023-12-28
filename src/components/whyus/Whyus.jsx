@@ -2,10 +2,13 @@ import customer from "./customer.png";
 import guide from "./guide.png";
 import reliable from "./reliable.png";
 import wealth from "./wealth.png";
+import Snowfall from "react-snowfall";
 
 export default function Whyus() {
   return (
-    <div className="lg:h-[90vh] ">
+    <div className="lg:h-[90vh] relative">
+    <Snowfall snowflakeCount={150} wind={[-1,4]} radius={[0.7,1.5]}/>
+
       <div className="p-16 flex justify-center items-start  font-poppins font-bold ">
         <div className="  w-[25%]">
           <div className="flex flex-col gap-2 text-[1.1rem]  ">

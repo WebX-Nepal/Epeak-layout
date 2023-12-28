@@ -11,7 +11,11 @@ import lhotse from "./lhotse.svg";
 import makalu from "./makalu.svg";
 import Chooyu from "./Chooyu.svg";
 import "./peak.css";
+
 import Mcard from "./Mcard";
+
+import Snowfall from "react-snowfall";
+
 
 export const Eight = () => {
   const [showDhaulagiri, setShowDhulagiri] = useState(false);
@@ -25,6 +29,8 @@ export const Eight = () => {
 
   return (
     <section className={`w-full    flex items-center relative`}>
+    <Snowfall snowflakeCount={150} wind={[-1,4]} radius={[0.7,1.5]}/>
+
       <div className="px-40 max-md:pl-24 grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 max-sm:grid-cols-1 border w-full">
         <div
           className="w-[220px] cursor-pointer relative"

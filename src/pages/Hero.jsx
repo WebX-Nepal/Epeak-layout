@@ -8,19 +8,23 @@ import Mountain from "../components/mountain/Mountain";
 import Whyus from "../components/whyus/Whyus";
 import Snowfall from "react-snowfall";
 export default function Hero() {
-  return (<>
-  <Navbar/>
-    <div className="border border-red-500">
+  return (
+    <div className="">
+      <Navbar />
+      <div className="border border-red-500  ">
+        <Mountain />
+      <Snowfall snowflakeCunt={205} wind={[-1, 4]} radius={[0.7, 1.5]} />
+      </div>
 
-      <Mountain />
+      <div className="relative">
+      <Snowfall snowflakeCunt={2050} wind={[-1, 4]} radius={[0.7, 1.5]} />
+        <Workedwith />
+        <Meaters />
+        <Eight />
+        <Whyus />
+        <Testimonial />
+        <Footer />
+      </div>
     </div>
-    <Workedwith/>
-   <Meaters/>
-   <Eight/>
-   <Whyus/>
-   <Testimonial/>
-   <Footer/>
-    
-  </>
   );
 }

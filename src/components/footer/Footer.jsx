@@ -1,9 +1,14 @@
+import Snowfall from "react-snowfall";
 import Patners from "./patners/Patners";
 import wave from "./svg3.png";
 export default function Footer() {
   return (
-    <footer>
+    <footer className="relative">
+      
+    <Snowfall snowflakeCount={50} wind={[-1,4]} radius={[0.7,2]}/>
+      
       <div className=" ">
+        
         <img src={wave} alt="" className="  h-10 w-full bg-repeat-x" />
         <div className="bg-[#262626] text-white font-poppins text-sm pb-20">
           <div className="w-[80vw] py-16 m-auto">
