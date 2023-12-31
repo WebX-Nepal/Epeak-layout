@@ -11,31 +11,31 @@ export default function Usefulinfo({ setShowUseful }) {
       <div
         onMouseEnter={() => setShowUseful(true)}
         onMouseLeave={() => setShowUseful(false)}
-        className="bg-[#023047]  w-[330px] flex flex-col p-8 gap-4"
+        className="text-black bg-white text-base flex flex-col p-4 gap-2"
       >
         <Link to="/terms-and-conditon" onClick={topScreen}>
-          <h4 className="cursor-pointer">Terms and Conditions</h4>
+          <h4 className="cursor-pointer border-b">Terms and Conditions</h4>
         </Link>
         <Link to="/gearlist" onClick={topScreen}>
-          <h4 className="cursor-pointer">Gear List</h4>
+          <h4 className="border-b cursor-pointer ">Gear List</h4>
         </Link>
         <Link to="/travel-advisory" onClick={topScreen}>
-          <h4 className="cursor-pointer">Travel Advisory</h4>
+          <h4 className="border-b cursor-pointer">Travel Advisory</h4>
         </Link>
         <Link to="/fixed-departure" onClick={topScreen}>
-          <h4 className="cursor-pointer">Fixed Departures</h4>
+          <h4 className="border-b cursor-pointer">Fixed Departures</h4>
         </Link>
         <Link to="/garbage" onClick={topScreen}>
-          <h4 className="cursor-pointer">Permit/Garbage Fees</h4>
+          <h4 className="border-b cursor-pointer">Permit/Garbage Fees</h4>
         </Link>
         <Link to="/visa-procedure" onClick={topScreen}>
-          <h4 className="cursor-pointer">Visa Procedure/Fees</h4>
+          <h4 className="border-b cursor-pointer">Visa Procedure/Fees</h4>
         </Link>
         <Link to="/inquiry-booking-payment" onClick={topScreen}>
-          <h4 className="cursor-pointer">Inquiry/Booking/Paymenet</h4>
+          <h4 className="border-b cursor-pointer">Inquiry/Booking/Paymenet</h4>
         </Link>
         <Link to="/FAQ">
-          <h4 className="cursor-pointer">FAQ</h4>
+          <h4 className="border-b cursor-pointer">FAQ</h4>
         </Link>
       </div>
     </div>

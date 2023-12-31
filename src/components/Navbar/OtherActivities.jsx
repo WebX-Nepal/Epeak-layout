@@ -6,27 +6,29 @@ export default function OtherActivities({ setShowActivity }) {
     <div
       onMouseEnter={() => setShowActivity(true)}
       onMouseLeave={() => setShowActivity(false)}
-      className="absolute p-8  top-12  
-      font-poppins text-white right-48   flex"
+      className="absolute   top-20  
+      font-poppins bg-white text-black right-4/4 rounded-b-md  flex"
     >
       {/* <div className="w-[60%]"></div> */}
       <ul
         onMouseEnter={() => setShowActivity(true)}
         onMouseLeave={() => setShowActivity(false)}
-        className="flex flex-col w-[330px] justify-center gap-4  p-8   bg-[#023047]"
+        className="flex flex-col justify-center gap-2 text-base  pb-4 pt-3 px-6   "
       >
-
         <Link to="/mountain-bike">
-        <li className="cursor-pointer">Mountain Bike</li>
+          <li className="cursor-pointer border-b">Mountain Bike</li>
         </Link>
         <Link to="/helitours">
-        <li className="cursor-pointer">Heli Tours</li>
+          <li className="cursor-pointer border-b">Heli Tours</li>
         </Link>
         <Link to="/citytour">
-        <li className="cursor-pointer">City Tour</li>
+          <li className="cursor-pointer border-b">City Tour</li>
         </Link>
         <Link to="/paragliding">
-        <li className="cursor-pointer">Paragliding</li>
+          <li className="cursor-pointer border-b">Paragliding</li>
+        </Link>
+        <Link to="/paragliding">
+          <li className="cursor-pointer border-b">Rafting</li>
         </Link>
       </ul>
     </div>
