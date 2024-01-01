@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 export default function Trekking({ setShowTrekking }) {
   const annapurnaRegion = [
     {
@@ -22,19 +23,36 @@ export default function Trekking({ setShowTrekking }) {
       onMouseLeave={() => setShowTrekking(false)}
       className="absolute   text-black rounded-b-md bg-white z-10 top-20 right-4/4   font-poppins   p-4 flex"
     >
-      <div className="flex flex-col gap-2  cursor-pointer">
+      <div className="flex flex-col gap-2  cursor-pointer capitalize">
         <ul className="text-base  flex flex-col gap-4">
-          <li className="border-b-2 whitespace-nowrap ">Annapurna Region</li>
-          <li className="border-b-2 whitespace-nowrap">Everest Region</li>
-          <li className="border-b-2 whitespace-nowrap">Langtang Region</li>
-          <li className="border-b-2 whitespace-nowrap">Manaslu Region</li>
-          <li className="border-b-2 whitespace-nowrap">Mustang Region</li>
-          <li className="border-b-2 whitespace-nowrap">Dhaulagiri Region</li>
+          <Link to="/trekking/annapurna-region">
+          <li className="border-b-2 whitespace-nowrap "> Annapurna Trekking</li>
+          </Link>
+          <Link to={"/trekking/everest-rolwaling"}>
+          <li className="border-b-2 whitespace-nowrap"> everest and rolwaling trekking </li>
+          </Link>
+          <Link to={"/trekking/langtang-helambu"}>
+          <li className="border-b-2 whitespace-nowrap"> langtang & helambu trek </li>
+          </Link>
+          <Link to={"/trekking/mustang"}>
+          <li className="border-b-2 whitespace-nowrap"> mustang trekking </li>
+          </Link>
+          <Link to={"/trekking/gorkha-manaslu"}>
+          <li className="border-b-2 whitespace-nowrap"> gorkha manaslu trek </li>
+          </Link>
+          <Link to={"/trekking/restrictedArea"}>
 
-          <li className="border-b-2 whitespace-nowrap">Kanchenjunga Region</li>
-          <li className="border-b-2 whitespace-nowrap">Makalu Region</li>
-          <li className="border-b-2 whitespace-nowrap">Rolwaling Region</li>
-          <li className="border-b-2 whitespace-nowrap">Karakoram Region</li>
+          <li className="border-b-2 whitespace-nowrap"> restricted area trekking </li>
+          </Link>
+          <Link to={"/trekking/easternNepal" }>
+          <li className="border-b-2 whitespace-nowrap"> eastern nepal trekking </li>
+          </Link>
+          <Link to={"/trekking/westernNepal"}>
+          <li className="border-b-2 whitespace-nowrap"> western nepal trekking </li>
+          </Link>
+          <Link to={"/trekking/trans-himalaya" }>
+          <li className="border-b-2 whitespace-nowrap"> trans himalaya trekking </li>
+          </Link>
         </ul>
       </div>
     </div>

@@ -8,7 +8,7 @@ export default function OurBlog() {
         Our <span className="text-[#26ACE2]">Blog</span>
       </h3>
 
-      <div className="py-8 px-16 mt-8 place-self-center grid grid-cols-4">
+      <div className="py-8 px-16 mt-8 place-self-center grid grid-cols-4 place-items-center">
         <BlogCard />
         <BlogCard />
         <BlogCard />

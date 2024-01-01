@@ -25,7 +25,10 @@ export default function Company({ setShow }) {
         <Link to="/aboutus" onClick={gotop}>
           <h3 className="border-b ">About Us</h3>
         </Link>
+        <Link to={"/our-team"}>
+          
         <h3 className="border-b ">Our Team</h3>
+        </Link>
         <h3 className="border-b ">Certificates & Documents</h3>
         <h3 className="border-b ">Our Blog</h3>
         <h3 className="border-b ">Attorney</h3>
