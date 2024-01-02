@@ -1,131 +1,98 @@
 import Navbar from "../components/Navbar/Navbar";
 import Footer from "../components/footer/Footer";
+import LastFooter from "../components/landingPage/Last";
 import range from "./assets/range.jpg";
 import { Icon } from "@iconify/react";
 import { useState } from "react";
 import Select from "react-select";
+import contact from "../assets/contact.png";
 export default function ContactUs() {
-  const options = [
-    { value: "beginner", label: "Beginner" },
-    { value: "intermediate", label: "Intermediate" },
-    { value: "advanced", label: "Advanced" },
-    { value: "excellent", label: "Excellent" },
-  ];
   const [selectedOption, setSelectedOption] = useState(null);
   return (
     <section>
       <Navbar />
 
       <div
+        className="h-[100vh] bg-cover bg-center text-white "
         style={{
-          backgroundImage: `url(${range})`,
+          backgroundImage: `url(${contact})`,
         }}
-        className=" h-[90vh] bg-center bg-cover"
       >
-        <div className=" lg:w-[50%]  px-32 flex flex-col justify-center text-white  gap-4 h-[80%]">
-          <h4 className="text-4xl">Contact Us</h4>
-          <p>
-            We will be more than happy to assist you. Please feel free to make a
-            call with your queries or fill out the contact form and we’ll get
-            back to you as soon as possible!!
-          </p>
+        <div className="p-32 flex ">
+
+          
+          <div className=" w-[50%] mx-auto flex flex-col p-8 gap-12 ">
+            <h3 className="text-3xl font-semibold "> Contact Us</h3>
+            <p className="flex gap-2 items-center">
+              {" "}
+              <Icon icon="zondicons:location" /> Bhangal, Kathmandu, Nepal
+            </p>
+            <div className="flex gap-2">
+              <Icon className="h-full" width={30} icon="mingcute:phone-fill" />
+              <div>
+                <p className="thered">+977-9812345678</p>
+                <p>+977-9851052525</p>
+              </div>
+            </div>
+
+            <p className="flex items-center gap-2">
+              <Icon icon="material-symbols:mail" />
+              info@epeakexpedition.com
+            </p>
+            <div className="flex gap-4 cursor-pointer">
+              <Icon color={"white"} width={24} icon="ic:baseline-facebook" />
+              <Icon color={"white"} width={24} icon="lets-icons:insta-fill" />
+              <Icon color={"white"} width={24} icon="mdi:twitter" />
+              <Icon color={"white"} width={24} icon="mdi:linkedin" />
+            </div>
+          </div>
+          <div className=" w-[50%] flex flex-col">
+            <p className="text-3xl w-[60%]">
+              Let us know, what’s in your thoughts!
+            </p>
+            <form action="" className="flex flex-col gap-4  mt-4">
+              <div className="te">
+                <input
+                  className="bg-white bg-opacity-20 lg:w-[50%] rounded-lg p-4  placeholder-white"
+                  type="text"
+                  placeholder="Fullname"
+                  style={{}}
+                />
+              </div>
+              <div>
+                <input
+                  className="bg-white bg-opacity-20 lg:w-[50%] rounded-lg p-4  placeholder-white "
+                  type="text"
+                  placeholder="Email"
+                />
+              </div>
+              <div>
+                <input
+                  className="bg-white bg-opacity-20 lg:w-[50%] rounded-lg p-4 placeholder-white "
+                  type="text"
+                  name=""
+                  id=""
+                  placeholder="from?"
+                />
+              </div>
+              <textarea
+                className="bg-white bg-opacity-20  rounded-lg   placeholder-white p-4"
+                name=""
+                id=""
+                cols="10"
+                rows="5"
+                placeholder="write something.."
+              ></textarea>
+
+              <button className="bg-[#273B91] px-5 py-2 w-[200px] rounded-xl">
+                Send
+              </button>
+            </form>
+          </div>
         </div>
       </div>
 
-      <div className="px-40 py-32 bg-[#f7f7f7]">
-        <div className="grid grid-cols-2 gap-16 font-Cormorant font-semibold">
-          <div className="h-[200px] border bg-white shadow-xl p-8 text-3xl  ">
-            Location
-          </div>
-          <div className="h-[200px] border bg-white shadow-xl p-8 text-3xl">
-            Contact at
-          </div>
-          <div className="h-[200px] border bg-white shadow-xl p-8 text-3xl ">
-            Email us
-          </div>
-          <div className="h-[200px] border bg-white shadow-xl p-8 text-3xl">
-            Post Box No.
-          </div>
-        </div>
-
-        <div className=" mt-32 flex items-center flex-col justify-center gap-4">
-          <h3 className="font-Cormorant font-bold text-4xl">
-            Follow us on social media
-          </h3>
-          <div className=" flex gap-16">
-            <Icon
-              width={30}
-              color="214B71"
-              className="cursor-pointer"
-              icon="ic:baseline-facebook"
-            />
-            <Icon
-              width={30}
-              color="214B71"
-              className="cursor-pointer"
-              icon="mdi:youtube"
-            />
-            <Icon
-              width={30}
-              color="214B71"
-              className="cursor-pointer"
-              icon="pajamas:twitter"
-            />
-            <Icon
-              width={30}
-              color="214B71"
-              className="cursor-pointer"
-              icon="ri:instagram-fill"
-            />
-          </div>
-        </div>
-
-        <div className="border mt-24">
-          <div className="p-16 flex flex-col gap-8">
-            <div className="flex border  gap-8">
-              <div className="flex w-[50%] flex-col">
-                <label htmlFor="">First Name</label>
-                <input type="text" className="" />
-              </div>
-              <div className="flex w-[50%]  flex-col">
-                <label htmlFor="">Surname</label>
-                <input type="text" />
-              </div>
-            </div>
-            <div className="flex gap-8">
-              <div className="flex w-[50%]  flex-col">
-                <label htmlFor="">Email</label>
-                <input type="text" />
-              </div>
-              <div className="flex w-[50%]    flex-col">
-                <label htmlFor="">Contact Number</label>
-                <input type="text" />
-              </div>
-            </div>
-            <div className="flex flex-col">
-              <label htmlFor="">Adventure Intrested In</label>
-              <input type="text" />
-            </div>
-
-            <div>
-              <label htmlFor="">Experience Level</label>
-              <Select
-                defaultValue={selectedOption}
-                onChange={setSelectedOption}
-                options={options}
-                className=" focus:outline-fuchsia-600"
-                classNames={{
-                  control: (state) =>
-                    state.isFocused ? "border-red-600" : "border-grey-300",
-                }}
-              />
-            </div>
-
-            <div></div>
-          </div>
-        </div>
-      </div>
-      <Footer />
+      <LastFooter />
     </section>
   );
 }

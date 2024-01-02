@@ -27,7 +27,7 @@ export default function OtherActivities({ setShowActivity }) {
         <Link to="/paragliding">
           <li className="cursor-pointer border-b">Paragliding</li>
         </Link>
-        <Link to="/paragliding">
+        <Link to="/rafting">
           <li className="cursor-pointer border-b">Rafting</li>
         </Link>
       </ul>

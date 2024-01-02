@@ -33,6 +33,7 @@ import RestrictedAreaTrek from "./pages/Trekking/RestrictedAreaTrek.jsx";
 import EasternNepalTrek from "./pages/Trekking/EasternNepalTrek.jsx";
 import WesternNepalTrek from "./pages/Trekking/WesternNepalTrek.jsx";
 import TransHimalayaTrek from "./pages/Trekking/TransHimalayaTrek.jsx";
+import Rafting from "./pages/OtherActivities/Rafting.jsx";
 ReactDOM.createRoot(document.getElementById("root")).render(
   <BrowserRouter>
     {/* <React.StrictMode> */}
@@ -64,6 +65,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         <Route element={<Paragliding />} path="/paragliding"></Route>
         <Route element={<MountaibBike />} path="/mountain-bike"></Route>
         <Route element={<CityTour />} path="/citytour"></Route>
+        <Route element={<Rafting/>} path="/rafting"/>
         {/* company */}
         <Route element={<Aboutus />} path="/aboutus"></Route>
         <Route element={<ContactUs />} path="/contactus"></Route>
