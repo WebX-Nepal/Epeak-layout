@@ -17,7 +17,8 @@ import Whyus from "../components/whyus/Whyus";
 import Snowfall from "react-snowfall";
 export default function Hero() {
   return (
-    <div className="">
+    <div className="relative">
+      
       {/* <Navbar />
       <div className="border border-red-500  ">
         <Mountain />
@@ -33,6 +34,9 @@ export default function Hero() {
         <Testimonial />
         <Footer />
       </div> */}
+
+
+<Snowfall/>
 
 
 <Navbar/>

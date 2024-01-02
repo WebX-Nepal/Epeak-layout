@@ -1,3 +1,4 @@
+import Snowfall from "react-snowfall";
 import Navbar from "../../../components/Navbar/Navbar";
 import expedition from "../assets/expedition.jpg";
 export default function ExpeditionHero({title}) {
@@ -6,9 +7,10 @@ export default function ExpeditionHero({title}) {
       <Navbar />
 
       <div
-        className="h-[100vh] bg-cover bg-center flex items-end "
+        className="h-[70vh] bg-cover bg-center flex items-end "
         style={{ backgroundImage: `url(${expedition})` }}
       >
+        <Snowfall/>
         <div className="h-[70%]  flex items-end my-auto">
           <div className="bg-black/30  text-white text-5xl ml-32 ">
             {title}

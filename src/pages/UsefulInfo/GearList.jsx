@@ -2,6 +2,7 @@ import Navbar from "../../components/Navbar/Navbar";
 import Footer from "../../components/footer/Footer";
 import gearlist from "./gearlist.jpg";
 import gearbg from "./assets/gearbg.jpg";
+import LastFooter from "../../components/landingPage/Last";
 export default function GearList() {
   return (
     <section>
@@ -50,7 +51,7 @@ export default function GearList() {
           </div>
         </div>
       </div>
-      <Footer />
+      <LastFooter/>
     </section>
   );
 }

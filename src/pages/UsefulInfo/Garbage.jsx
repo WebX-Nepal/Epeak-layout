@@ -3,6 +3,7 @@
 import Navbar from "../../components/Navbar/Navbar";
 import Usefulinfo from "../../components/Navbar/Usefulinfo";
 import Footer from "../../components/footer/Footer";
+import LastFooter from "../../components/landingPage/Last";
 import UsefulFirst from "./UsefulFirst";
 
 export default function Garbage() {
@@ -27,7 +28,7 @@ export default function Garbage() {
         </div>
     </div>
 
-    <Footer/>
+    <LastFooter/>
 </section>
     )
 }

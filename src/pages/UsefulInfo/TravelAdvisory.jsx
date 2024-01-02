@@ -1,5 +1,6 @@
 import Navbar from "../../components/Navbar/Navbar";
 import Footer from "../../components/footer/Footer";
+import LastFooter from "../../components/landingPage/Last";
 import UsefulFirst from "./UsefulFirst";
 
 export default function TravelAdvisory() {
@@ -21,7 +22,7 @@ export default function TravelAdvisory() {
 
 </div>
 
-    <Footer/>
+    <LastFooter/>
 </section>
     )
 }

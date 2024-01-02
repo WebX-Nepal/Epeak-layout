@@ -6,19 +6,20 @@ import { Icon } from "@iconify/react";
 import { useState } from "react";
 import Select from "react-select";
 import contact from "../assets/contact.png";
+import Snowfall from "react-snowfall";
 export default function ContactUs() {
   const [selectedOption, setSelectedOption] = useState(null);
   return (
     <section>
       <Navbar />
-
+<Snowfall/>
       <div
         className="h-[100vh] bg-cover bg-center text-white "
         style={{
           backgroundImage: `url(${contact})`,
         }}
       >
-        <div className="p-32 flex ">
+        <div className="px-32 pt-32 flex ">
 
           
           <div className=" w-[50%] mx-auto flex flex-col p-8 gap-12 ">
@@ -92,7 +93,7 @@ export default function ContactUs() {
         </div>
       </div>
 
-      <LastFooter />
+
     </section>
   );
 }

@@ -9,6 +9,11 @@ import { Icon } from "@iconify/react";
 
 export default function Expeditions({ setShowExpeditions }) {
 
+
+
+  function scrollUP(){
+    scrollTo(0,0)
+  }
   const [showMountain, setShowMountain] = useState("");
   return (
     <div
@@ -22,7 +27,7 @@ export default function Expeditions({ setShowExpeditions }) {
           <Link to={"/expedition/8000ers"}>
           <li
             className={`border-b relative w-full cursor-pointer whitespace-nowrap flex justify-between items-center gap-12   `}
-            onClick={() => setShowMountain("8000")}
+            onClick={() =>{ setShowMountain("8000"); scrollUP()}}
             >
             8000 meters
            
@@ -31,7 +36,7 @@ export default function Expeditions({ setShowExpeditions }) {
             <Link to={"/expedition/7000ers"}>
           <li
             className={`border-b relative w-full cursor-pointer whitespace-nowrap flex justify-between items-center gap-12   `}
-            onClick={() => setShowMountain("7000")}
+            onClick={() =>{ setShowMountain("7000"); scrollUP()}}
             >
             7000 meters
            
@@ -40,7 +45,7 @@ export default function Expeditions({ setShowExpeditions }) {
             <Link to={"/expedition/6000ers"}>
           <li
             className={`border-b relative w-full cursor-pointer whitespace-nowrap flex justify-between items-center gap-12   `}
-            onClick={() => setShowMountain("6000")}
+            onClick={() =>{ setShowMountain("6000"); scrollUP() }}
             >
             6000 meters
            
@@ -52,7 +57,7 @@ export default function Expeditions({ setShowExpeditions }) {
             <Link to={"/expedition/5000ers"}>
           <li
             className={`border-b relative w-full cursor-pointer whitespace-nowrap flex justify-between items-center gap-12   `}
-            onClick={() => setShowMountain("5000")}
+            onClick={() =>{ setShowMountain("5000"); scrollUP() }}
           >
             5000 meters
           

@@ -19,13 +19,13 @@ export default function Navbar() {
   const [search, setSearch] = useState(false);
   return (
     <>
-      <div className="fixed backdrop-blur-sm top-0 z-10 flex w-full justify-around items-center px-2 gap-52 bg-[#256195]  bg-opacity-70">
+      <div className="fixed backdrop-blur-sm top-0 z-10 flex w-full justify-around items-center px-2 gap-52 bg-[#256195]  bg-opacity-70 ">
         <div className="w-48 p-1  ">
           <img src={Logo} alt="" />{" "}
         </div>
 
         <div className="lg:hidden">
-        <Icon color="white" width={25} icon="pajamas:hamburger" />
+          <Icon color="white" width={25} icon="pajamas:hamburger" />
         </div>
         <div className="max-lg:hidden">
           <ul className="font-poppins font-light flex gap-6 text-white text-lg items-center ">
@@ -83,7 +83,7 @@ export default function Navbar() {
             </li>
 
             <Link to="/contactus">
-            <li className="whitespace-nowrap">Contact Us</li>
+              <li className="whitespace-nowrap">Contact Us</li>
             </Link>
             <li className="cursor-pointer" onClick={() => setSearch(!search)}>
               <Icon icon="iconamoon:search-light" />

@@ -16,16 +16,16 @@ export default function Testimonial() {
   return (
     <>
       <div
-        className="text-center h-[50vh]  bg-cover bg-center "
-        style={{
-          backgroundImage: `url(${Group})`,
-        }}
+        className="text-center h-[80vh] flex flex-col justify-around "
+        
       >
         <h3 className=" text-5xl font-semibold">
           What our customer <span className="text-[#26ACE2]">says?</span>
         </h3>
 
-        <div className=" w-[70%] mx-auto mt-16">
+        <div className=" w-[70%] mx-auto mt-16 bg-cover bg-center  h-[50vh] " style={{
+          backgroundImage: `url(${Group})`,
+        }}>
           <Slider {...settings}>
             <div>
               <TestimonialCard />

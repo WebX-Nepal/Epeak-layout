@@ -2,7 +2,7 @@ import { Icon } from "@iconify/react";
 export default function WhyBorn() {
   return (
     <div className="px-40 py-32 font-poppins flex flex-col gap-12">
-      <h2 className="text-5xl font-Cormorant font-semibold text-center">
+      <h2 className="text-4xl  font-semibold text-center">
         Why <span className="text-[#26ACE2]">Epeak</span> was born?
       </h2>
       <p className="lg:w-[80%] text-center m-auto">

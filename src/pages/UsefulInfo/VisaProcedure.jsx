@@ -1,5 +1,6 @@
 import Navbar from "../../components/Navbar/Navbar";
 import Footer from "../../components/footer/Footer";
+import LastFooter from "../../components/landingPage/Last";
 import UsefulFirst from "./UsefulFirst";
 import UsefulSticky from "./UsefulSticky";
 export default function VisaProcedure() {
@@ -18,6 +19,6 @@ export default function VisaProcedure() {
           <UsefulSticky />
         </div>
       </div>
-    <Footer/>
+    <LastFooter/>
 </section>    )
 }

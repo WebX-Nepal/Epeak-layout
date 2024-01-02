@@ -116,7 +116,7 @@ function CardExpedition({ name, photo, height }) {
   return (
     <div
       style={{ backgroundImage: `url(${everest})` }}
-      className="bg-center  h-[312px]  border-red-600"
+      className="bg-center bg-cover w-full h-[312px]  border-red-600"
       // className="bg-center  h-[312px] w-[650px] border-red-600"
     ></div>
   );
@@ -147,64 +147,98 @@ export default function OurExpedition() {
 
   const [activeExpedition, setActiveExpedtion] = useState(true);
   return (
-    <div className="bg-[#f7f7f7] py-16">
-      <div className="font-Cormorant font-semibold text-5xl text-center">
+    <div className="bg-[#f7f7f7] py-16  ">
+      <div className="  font-semibold text-4xl text-center mb-16">
         <h2>
           Our
           <span className="text-[#26ACE2]"> Expeditions</span>
         </h2>
       </div>
 
-      <div className="w-full flex px-40">
-        <div className="w-[40%] ">
-          <div className="flex gap-6">
-            <span
-              className={`${
-                activeExpedition ? "bg-[#273B91] text-white" : "text-slate-400"
-              } px-5 py-2 rounded-md `}
-              onClick={() => setActiveExpedtion(true)}
-            >
-              {" "}
-              Expedition
-            </span>
-            <span
-              className={`${
-                !activeExpedition ? "bg-[#273B91] text-white" : "text-slate-400"
-              } px-5 py-2 rounded-md `}
-              onClick={() => setActiveExpedtion(false)}
-            >
-              Trekking
-            </span>
-          </div>
-          <div>
-            {activeExpedition && (
-              <ul className="mt-4 px-8">
-                <li className=" whitespace-nowrap ">8000 meters</li>
-                <li className=" whitespace-nowrap ">7000 meters</li>
-                <li className=" whitespace-nowrap ">6000 meters</li>
-                <li className=" whitespace-nowrap ">5000 meters</li>
-              </ul>
-            )}
-            {!activeExpedition && (
-              <ul className="text-base px-8 flex flex-col mt-4">
-                <li className=" whitespace-nowrap ">Annapurna Region</li>
-                <li className=" whitespace-nowrap">Everest Region</li>
-                <li className=" whitespace-nowrap">Langtang Region</li>
-                <li className=" whitespace-nowrap">Manaslu Region</li>
-                <li className=" whitespace-nowrap">Mustang Region</li>
-                <li className=" whitespace-nowrap">Dhaulagiri Region</li>
+      <div className="w-full flex gap-32 px-40 ">
+        <div className="w-[40%] flex flex-col items-end  ">
+          <div className="flex flex-col cursor-pointer">
+            <div>
+              <span
+                className={`${
+                  activeExpedition
+                    ? "bg-[#273B91] text-white"
+                    : "text-slate-400"
+                } px-5 py-2 rounded-md `}
+                onClick={() => setActiveExpedtion(true)}
+              >
+                {" "}
+                Expedition
+              </span>
+              <span
+                className={`${
+                  !activeExpedition
+                    ? "bg-[#273B91] text-white"
+                    : "text-slate-400"
+                } px-5 py-2 rounded-md `}
+                onClick={() => setActiveExpedtion(false)}
+              >
+                Trekking
+              </span>
+            </div>
+            <div>
+              {activeExpedition && (
+                <ul className="mt-8  grid gap-3">
+                  <li className="hover:text-[#26ACE2] cursor-pointer whitespace-nowrap ">
+                    8000 meters
+                  </li>
+                  <li className="hover:text-[#26ACE2] cursor-pointer whitespace-nowrap ">
+                    7000 meters
+                  </li>
+                  <li className="hover:text-[#26ACE2] cursor-pointer whitespace-nowrap ">
+                    6000 meters
+                  </li>
+                  <li className="hover:text-[#26ACE2] cursor-pointer whitespace-nowrap ">
+                    5000 meters
+                  </li>
+                </ul>
+              )}
+              {!activeExpedition && (
+                <ul className="text-base  flex flex-col mt-8 cursor-pointer gap-3">
+                  <li className="hover:text-[#26ACE2] whitespace-nowrap ">
+                    Annapurna Region
+                  </li>
+                  <li className="hover:text-[#26ACE2] whitespace-nowrap">
+                    Everest Region
+                  </li>
+                  <li className="hover:text-[#26ACE2] whitespace-nowrap">
+                    Langtang Region
+                  </li>
+                  <li className="hover:text-[#26ACE2] whitespace-nowrap">
+                    Manaslu Region
+                  </li>
+                  <li className="hover:text-[#26ACE2] whitespace-nowrap">
+                    Mustang Region
+                  </li>
+                  <li className="hover:text-[#26ACE2] whitespace-nowrap">
+                    Dhaulagiri Region
+                  </li>
 
-                <li className=" whitespace-nowrap">Kanchenjunga Region</li>
-                <li className=" whitespace-nowrap">Makalu Region</li>
-                <li className=" whitespace-nowrap">Rolwaling Region</li>
-                <li className=" whitespace-nowrap">Karakoram Region</li>
-              </ul>
-            )}
-          </div>{" "}
+                  <li className="hover:text-[#26ACE2] whitespace-nowrap">
+                    Kanchenjunga Region
+                  </li>
+                  <li className="hover:text-[#26ACE2] whitespace-nowrap">
+                    Makalu Region
+                  </li>
+                  <li className="hover:text-[#26ACE2] whitespace-nowrap">
+                    Rolwaling Region
+                  </li>
+                  <li className="hover:text-[#26ACE2] whitespace-nowrap">
+                    Karakoram Region
+                  </li>
+                </ul>
+              )}
+            </div>{" "}
+          </div>
         </div>
         <div className="w-[60%] ">
-          <div className="  border ">
-            <Slider {...settings}>
+          <div>
+            <Slider {...settings} className="  rounded-xl ">
               <CardExpedition />
               <CardExpedition />
               <CardExpedition />
