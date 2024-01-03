@@ -22,11 +22,11 @@ export default function Expeditions({ setShowExpeditions }) {
       className="absolute  w-[150px]  z-30 bg-white  rounded-b-md top-20 right-2.5/4  font-poppins text-black p-4 flex gap-16"
     >
       <div className=" ">
-        <ul className="text-base  flex flex-col items-center gap-3  ">
+        <ul className="text-base pb-2  flex flex-col items-center gap-3  ">
           
           <Link to={"/expedition/8000ers"}>
           <li
-            className={`border-b relative w-full cursor-pointer whitespace-nowrap flex justify-between items-center gap-12   `}
+            className={` hover:text-slate-400 border-b pb-2 relative w-full cursor-pointer whitespace-nowrap flex justify-between items-center gap-12   `}
             onClick={() =>{ setShowMountain("8000"); scrollUP()}}
             >
             8000 meters
@@ -35,7 +35,7 @@ export default function Expeditions({ setShowExpeditions }) {
             </Link>
             <Link to={"/expedition/7000ers"}>
           <li
-            className={`border-b relative w-full cursor-pointer whitespace-nowrap flex justify-between items-center gap-12   `}
+            className={` hover:text-slate-400 border-b pb-2 relative w-full cursor-pointer whitespace-nowrap flex justify-between items-center gap-12   `}
             onClick={() =>{ setShowMountain("7000"); scrollUP()}}
             >
             7000 meters
@@ -44,7 +44,7 @@ export default function Expeditions({ setShowExpeditions }) {
             </Link>
             <Link to={"/expedition/6000ers"}>
           <li
-            className={`border-b relative w-full cursor-pointer whitespace-nowrap flex justify-between items-center gap-12   `}
+            className={` hover:text-slate-400 border-b pb-2 relative w-full cursor-pointer whitespace-nowrap flex justify-between items-center gap-12   `}
             onClick={() =>{ setShowMountain("6000"); scrollUP() }}
             >
             6000 meters
@@ -56,7 +56,7 @@ export default function Expeditions({ setShowExpeditions }) {
 
             <Link to={"/expedition/5000ers"}>
           <li
-            className={`border-b relative w-full cursor-pointer whitespace-nowrap flex justify-between items-center gap-12   `}
+            className={` hover:text-slate-400 border-b pb-2 relative w-full cursor-pointer whitespace-nowrap flex justify-between items-center gap-12   `}
             onClick={() =>{ setShowMountain("5000"); scrollUP() }}
           >
             5000 meters

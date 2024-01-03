@@ -15,10 +15,26 @@ import Meaters from "../components/meaters/Meaters";
 import Mountain from "../components/mountain/Mountain";
 import Whyus from "../components/whyus/Whyus";
 import Snowfall from "react-snowfall";
+import { useState } from "react";
+import { useEffect } from "react";
 export default function Hero() {
+  /* re-render */
+  const [scrollCount, setScrollCount] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrollCount((prevCount) => prevCount + 0.00001);
+    };
+    // console.log(scrollCount);
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <div className="relative">
-      
       {/* <Navbar />
       <div className="border border-red-500  ">
         <Mountain />
@@ -35,21 +51,18 @@ export default function Hero() {
         <Footer />
       </div> */}
 
+      <Snowfall />
 
-<Snowfall/>
+      <Navbar backgroundTransparent={true} />
+      <LandFirst />
+      <WhyBorn />
+      <OurExpedition />
+      <Package />
+      <OurBlog />
+      <FrequentlyAsk />
+      <Testimonial />
 
-
-<Navbar/>
-<LandFirst/>
-<WhyBorn/>
-<OurExpedition/>
-<Package/>
-<OurBlog/>
-<FrequentlyAsk/>
-<Testimonial/>
-
-<LastFooter/>
-
+      <LastFooter />
     </div>
   );
 }

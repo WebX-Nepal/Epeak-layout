@@ -6,8 +6,8 @@ export default function Package() {
   const [season, setSeason] = useState("1");
   return (
     <>
-      <div className="flex flex-col gap-16 px-40  py-32">
-        <div className="flex">
+      <div className="flex flex-col gap-16   pb-16">
+        <div className="flex bg-[#f7f7f7] px-40 py-8">
           <div className="w-[50%] flex items-end justify-center   ">
             <img src={mountain} className="w-96" alt="muntaion" />
           </div>

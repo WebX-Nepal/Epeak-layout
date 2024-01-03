@@ -11,7 +11,7 @@ export default function ContactUs() {
   const [selectedOption, setSelectedOption] = useState(null);
   return (
     <section>
-      <Navbar />
+      <Navbar backgroundTransparent={true}/>
 <Snowfall/>
       <div
         className="h-[100vh] bg-cover bg-center text-white "

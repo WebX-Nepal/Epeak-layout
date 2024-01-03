@@ -2,7 +2,7 @@ import BlogCard from "./BlogCard";
 import { Icon } from '@iconify/react';
 export default function OurBlog() {
   return (
-    <div className="py-32" >
+    <div className="py-16 mt-16 bg-[#f7f7f7]" >
       <h3 className="text-center text-5xl font-semibold">
         Our <span className="text-[#26ACE2]">Blog</span>
       </h3>

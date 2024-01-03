@@ -14,28 +14,28 @@ export default function Usefulinfo({ setShowUseful }) {
         className="text-black bg-white text-base flex flex-col p-4 gap-2"
       >
         <Link to="/terms-and-conditon" onClick={topScreen}>
-          <h4 className="cursor-pointer border-b">Terms and Conditions</h4>
+          <h4 className="cursor-pointer border-b hover:text-slate-400  pb-2">Terms and Conditions</h4>
         </Link>
         <Link to="/gearlist" onClick={topScreen}>
-          <h4 className="border-b cursor-pointer ">Gear List</h4>
+          <h4 className="border-b cursor-pointer hover:text-slate-400  pb-2 ">Gear List</h4>
         </Link>
         <Link to="/travel-advisory" onClick={topScreen}>
-          <h4 className="border-b cursor-pointer">Travel Advisory</h4>
+          <h4 className="border-b cursor-pointer hover:text-slate-400  pb-2">Travel Advisory</h4>
         </Link>
         <Link to="/fixed-departure" onClick={topScreen}>
-          <h4 className="border-b cursor-pointer">Fixed Departures</h4>
+          <h4 className="border-b cursor-pointer hover:text-slate-400  pb-2">Fixed Departures</h4>
         </Link>
         <Link to="/garbage" onClick={topScreen}>
-          <h4 className="border-b cursor-pointer">Permit/Garbage Fees</h4>
+          <h4 className="border-b cursor-pointer hover:text-slate-400  pb-2">Permit/Garbage Fees</h4>
         </Link>
         <Link to="/visa-procedure" onClick={topScreen}>
-          <h4 className="border-b cursor-pointer">Visa Procedure/Fees</h4>
+          <h4 className="border-b cursor-pointer hover:text-slate-400  pb-2">Visa Procedure/Fees</h4>
         </Link>
         <Link to="/inquiry-booking-payment" onClick={topScreen}>
-          <h4 className="border-b cursor-pointer">Inquiry/Booking/Paymenet</h4>
+          <h4 className="border-b cursor-pointer hover:text-slate-400  pb-2">Inquiry/Booking/Paymenet</h4>
         </Link>
         <Link to="/FAQ">
-          <h4 className="border-b cursor-pointer">FAQ</h4>
+          <h4 className="border-b cursor-pointer hover:text-slate-400  pb-2">FAQ</h4>
         </Link>
       </div>
     </div>

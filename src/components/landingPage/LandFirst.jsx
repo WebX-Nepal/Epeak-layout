@@ -10,10 +10,9 @@ export default function LandFirst() {
       className="w-full h-[100vh] relative bg-center bg-cover   "
       style={{ backgroundImage: `url(${Mt})` }}
     >
-    <div className="h-full w-full  bg-gradient-to-r from-[#273B91] to-[#26ACE2] absolute opacity-50">
-        </div>
-      <Snowfall/>
-        <div className=" border flex justify-center font-poppins ">
+      <div className="h-full w-full  bg-gradient-to-r from-[#273B91] to-[#26ACE2] absolute opacity-50"></div>
+      <Snowfall />
+      {/* <div className=" border flex justify-center font-poppins ">
           <div className=" w-[60.75rem] bg-white absolute bottom-28  rounded-full p-8  flex gap-24 items-center justify-center">
             <div className="flex flex-col gap-2">
               <div
@@ -54,8 +53,14 @@ export default function LandFirst() {
               Book Now
             </button>
           </div>
-        </div>
-      </div>
-    
+        </div> */}
+
+      <h1 className="text-white leading-tight font-poppins font-black absolute text-5xl w-full text-center flex h-full justify-center items-center">
+        Elevate your advantures with epeak where 
+        <br></br>
+        every peak is an unforgattable
+        journey. 
+      </h1>
+    </div>
   );
 }

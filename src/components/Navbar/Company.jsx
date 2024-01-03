@@ -20,18 +20,18 @@ export default function Company({ setShow }) {
 
       <div className="flex flex-col gap-2  text-base">
         <Link to="/chairman-message" onClick={gotop}>
-          <h3 className="border-b ">Chairman's Message</h3>
+          <h3 className="hover:text-slate-400 border-b pb-2 ">Chairman's Message</h3>
         </Link>
         <Link to="/aboutus" onClick={gotop}>
-          <h3 className="border-b ">About Us</h3>
+          <h3 className="hover:text-slate-400 border-b pb-2 ">About Us</h3>
         </Link>
         <Link to={"/our-team"}>
           
-        <h3 className="border-b ">Our Team</h3>
+        <h3 className="hover:text-slate-400 border-b pb-2 ">Our Team</h3>
         </Link>
-        <h3 className="border-b ">Certificates & Documents</h3>
-        <h3 className="border-b ">Our Blog</h3>
-        <h3 className="border-b ">Attorney</h3>
+        <h3 className="hover:text-slate-400 border-b pb-2 ">Certificates & Documents</h3>
+        <h3 className="hover:text-slate-400 border-b pb-2 ">Our Blog</h3>
+        <h3 className="hover:text-slate-400 border-b pb-2 ">Attorney</h3>
       </div>
 
       {/* <div className="flex gap-4 flex-col items-center justify-center">

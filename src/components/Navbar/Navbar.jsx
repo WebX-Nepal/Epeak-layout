@@ -1,7 +1,9 @@
+/* eslint-disable react/prop-types */
+/* eslint-disable react-hooks/exhaustive-deps */
 import Logo from "../../assets/whiteLogo.png";
 import { Icon } from "@iconify/react";
 import Company from "./Company";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Usefulinfo from "./Usefulinfo";
 import Trekking from "./Trekking";
 import Expeditions from "./Expeditions";
@@ -9,7 +11,7 @@ import Search from "./Search";
 import { Link } from "react-router-dom";
 import OtherActivities from "./OtherActivities";
 
-export default function Navbar() {
+export default function Navbar({backgroundTransparent=false}) {
   const [show, setShow] = useState(false);
   const [showExpeditions, setShowExpeditions] = useState(false);
   const [showTrekking, setShowTrekking] = useState(false);
@@ -17,9 +19,43 @@ export default function Navbar() {
   const [showActivity, setShowActivity] = useState(false);
 
   const [search, setSearch] = useState(false);
+
+  const [myHeight, setMyHeight] = useState();
+  const [theBackground, setTheBackground] = useState(false);
+
+  useEffect(() => {
+    setMyHeight(window.scrollY);
+
+    if (window.innerHeight > myHeight + 100) {
+      setTheBackground(true);
+      console.log("true", window.scrollY);
+    } else {
+      setTheBackground(false);
+    }
+  });
+
+  /* re-render */
+  //   const [scrollCount, setScrollCount] = useState(0);
+
+  //   useEffect(() => {
+  //     const handleScroll = () => {
+  //       setScrollCount(prevCount => prevCount + 0.00001);
+  //     };
+  // console.log(scrollCount)
+  //     window.addEventListener('scroll', handleScroll);
+
+  //     return () => {
+  //       window.removeEventListener('scroll', handleScroll);
+  //     };
+  //   }, []);
+
   return (
     <>
-      <div className="fixed backdrop-blur-sm top-0 z-10 flex w-full justify-around items-center px-2 gap-52 bg-[#256195]  bg-opacity-70 ">
+      <div
+        className={`fixed top-0 z-10 flex w-full  justify-around items-center px-2 gap-52 ${
+        backgroundTransparent? ( !theBackground ? "bg-[#273B91]" : "bg-transparent"):"bg-[#273B91]"
+        }`}
+      >
         <div className="w-48 p-1  ">
           <img src={Logo} alt="" />{" "}
         </div>

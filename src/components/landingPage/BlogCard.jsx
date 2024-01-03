@@ -2,7 +2,7 @@ import blogImg from "./assets/blog.png";
 
 export default function BlogCard() {
   return (
-    <div className="h-[375px] w-[305px] bg-[#f7f7f7] p-2 rounded-lg flex flex-col  gap-2">
+    <div className="h-[375px] w-[305px] bg-white p-2 rounded-lg flex flex-col  gap-2">
       <div className="rounded-lg">
         <img src={blogImg} alt="log" />
       </div>

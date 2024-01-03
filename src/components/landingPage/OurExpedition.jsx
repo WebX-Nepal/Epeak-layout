@@ -15,6 +15,7 @@ import masaslu from "./assets/MANASLU.jpg";
 import "./cardE.css";
 import video from "./assets/video.jpg";
 import { Icon } from "@iconify/react";
+import movie from "./assets/video/movie.mp4";
 const mountainsEight = [
   {
     name: "Mount Everest",
@@ -116,7 +117,7 @@ function CardExpedition({ name, photo, height }) {
   return (
     <div
       style={{ backgroundImage: `url(${everest})` }}
-      className="bg-center bg-cover w-full h-[312px]  border-red-600"
+      className="bg-center bg-cover w-full h-[312px]  border-red-600 rounded-xl"
       // className="bg-center  h-[312px] w-[650px] border-red-600"
     ></div>
   );
@@ -147,17 +148,17 @@ export default function OurExpedition() {
 
   const [activeExpedition, setActiveExpedtion] = useState(true);
   return (
-    <div className="bg-[#f7f7f7] py-16  ">
-      <div className="  font-semibold text-4xl text-center mb-16">
+    <div className=" py-16  ">
+      <div className="  font-semibold text-4xl text-center bg-[#f7f7f7] pt-8 pb-8 ">
         <h2>
           Our
           <span className="text-[#26ACE2]"> Expeditions</span>
         </h2>
       </div>
 
-      <div className="w-full flex gap-32 px-40 ">
+      <div className="w-full flex gap-32 px-40 bg-[#f7f7f7] py-16">
         <div className="w-[40%] flex flex-col items-end  ">
-          <div className="flex flex-col cursor-pointer">
+          <div className="flex flex-col cursor-pointer ">
             <div>
               <span
                 className={`${
@@ -236,9 +237,9 @@ export default function OurExpedition() {
             </div>{" "}
           </div>
         </div>
-        <div className="w-[60%] ">
+        <div className="w-[60%]  ">
           <div>
-            <Slider {...settings} className="  rounded-xl ">
+            <Slider {...settings} className="   ">
               <CardExpedition />
               <CardExpedition />
               <CardExpedition />
@@ -248,13 +249,10 @@ export default function OurExpedition() {
         </div>
       </div>
 
-      <div className=" py-32 px-40">
-        <div
-          style={{ backgroundImage: `url(${video})` }}
-          className="h-[50vh] bv-cover bg-center flex items-center justify-center hover:cursor-pointer "
-        >
-          <Icon icon="octicon:play-16" color="white" width="60" />
-        </div>
+      <div className=" py-32 bg-white w-full flex items-center justify-center rounded-xl">
+        <video className=" "  autoPlay loop muted >
+          <source src={movie} type="video/mp4" />
+        </video>
       </div>
     </div>
   );

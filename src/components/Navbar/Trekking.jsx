@@ -23,35 +23,35 @@ export default function Trekking({ setShowTrekking }) {
       onMouseLeave={() => setShowTrekking(false)}
       className="absolute   text-black rounded-b-md bg-white z-10 top-20 right-4/4   font-poppins   p-4 flex"
     >
-      <div className="flex flex-col gap-2  cursor-pointer capitalize">
-        <ul className="text-base  flex flex-col gap-4">
+      <div className="flex flex-col gap-1  cursor-pointer capitalize">
+        <ul className="text-base  flex flex-col ">
           <Link to="/trekking/annapurna-region">
-          <li className="border-b-2 whitespace-nowrap "> Annapurna Trekking</li>
+          <li className="border-b-2 pb-1 whitespace-nowrap hover:text-slate-400 "> Annapurna Trekking</li>
           </Link>
           <Link to={"/trekking/everest-rolwaling"}>
-          <li className="border-b-2 whitespace-nowrap"> everest and rolwaling trekking </li>
+          <li className="border-b-2 pb-1 whitespace-nowrap hover:text-slate-400"> everest and rolwaling trekking </li>
           </Link>
           <Link to={"/trekking/langtang-helambu"}>
-          <li className="border-b-2 whitespace-nowrap"> langtang & helambu trek </li>
+          <li className="border-b-2 pb-1 whitespace-nowrap hover:text-slate-400"> langtang & helambu trek </li>
           </Link>
           <Link to={"/trekking/mustang"}>
-          <li className="border-b-2 whitespace-nowrap"> mustang trekking </li>
+          <li className="border-b-2 pb-1 whitespace-nowrap hover:text-slate-400"> mustang trekking </li>
           </Link>
           <Link to={"/trekking/gorkha-manaslu"}>
-          <li className="border-b-2 whitespace-nowrap"> gorkha manaslu trek </li>
+          <li className="border-b-2 pb-1 whitespace-nowrap hover:text-slate-400"> gorkha manaslu trek </li>
           </Link>
           <Link to={"/trekking/restrictedArea"}>
 
-          <li className="border-b-2 whitespace-nowrap"> restricted area trekking </li>
+          <li className="border-b-2 pb-1 whitespace-nowrap hover:text-slate-400"> restricted area trekking </li>
           </Link>
           <Link to={"/trekking/easternNepal" }>
-          <li className="border-b-2 whitespace-nowrap"> eastern nepal trekking </li>
+          <li className="border-b-2 pb-1 whitespace-nowrap hover:text-slate-400"> eastern nepal trekking </li>
           </Link>
           <Link to={"/trekking/westernNepal"}>
-          <li className="border-b-2 whitespace-nowrap"> western nepal trekking </li>
+          <li className="border-b-2 pb-1 whitespace-nowrap hover:text-slate-400"> western nepal trekking </li>
           </Link>
           <Link to={"/trekking/trans-himalaya" }>
-          <li className="border-b-2 whitespace-nowrap"> trans himalaya trekking </li>
+          <li className="border-b-2 pb-1 whitespace-nowrap hover:text-slate-400"> trans himalaya trekking </li>
           </Link>
         </ul>
       </div>
