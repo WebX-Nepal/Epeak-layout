@@ -1,4 +1,4 @@
-import worked from "./workedwith.png";
+import worked from "./workedWith.png";
 import Snowfall from "react-snowfall";
 export default function Workedwith() {
   return (
