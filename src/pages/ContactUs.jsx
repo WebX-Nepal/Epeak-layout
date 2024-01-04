@@ -5,14 +5,14 @@ import range from "./assets/range.jpg";
 import { Icon } from "@iconify/react";
 import { useState } from "react";
 import Select from "react-select";
-import contact from "../assets/contact.png";
+import contact from "../assets/contact.jpg";
 import Snowfall from "react-snowfall";
 export default function ContactUs() {
   const [selectedOption, setSelectedOption] = useState(null);
   return (
     <section>
-      <Navbar backgroundTransparent={true}/>
-<Snowfall/>
+      <Navbar backgroundTransparent={true} />
+      <Snowfall />
       <div
         className="h-[100vh] bg-cover bg-center text-white "
         style={{
@@ -20,8 +20,6 @@ export default function ContactUs() {
         }}
       >
         <div className="px-32 pt-32 flex ">
-
-          
           <div className=" w-[50%] mx-auto flex flex-col p-8 gap-12 ">
             <h3 className="text-3xl font-semibold "> Contact Us</h3>
             <p className="flex gap-2 items-center">
@@ -54,7 +52,7 @@ export default function ContactUs() {
             <form action="" className="flex flex-col gap-4  mt-4">
               <div className="te">
                 <input
-                  className="bg-white bg-opacity-20 lg:w-[50%] rounded-lg p-4  placeholder-white"
+                  className="bg-white bg-opacity-20 lg:w-[60%] rounded-lg p-4  placeholder-white"
                   type="text"
                   placeholder="Fullname"
                   style={{}}
@@ -62,14 +60,14 @@ export default function ContactUs() {
               </div>
               <div>
                 <input
-                  className="bg-white bg-opacity-20 lg:w-[50%] rounded-lg p-4  placeholder-white "
+                  className="bg-white bg-opacity-20 lg:w-[60%] rounded-lg p-4  placeholder-white "
                   type="text"
                   placeholder="Email"
                 />
               </div>
               <div>
                 <input
-                  className="bg-white bg-opacity-20 lg:w-[50%] rounded-lg p-4 placeholder-white "
+                  className="bg-white bg-opacity-20 lg:w-[60%] rounded-lg p-4 placeholder-white "
                   type="text"
                   name=""
                   id=""
@@ -77,7 +75,7 @@ export default function ContactUs() {
                 />
               </div>
               <textarea
-                className="bg-white bg-opacity-20  rounded-lg   placeholder-white p-4"
+                className="bg-white bg-opacity-20  rounded-lg  w-[60%] placeholder-white p-4"
                 name=""
                 id=""
                 cols="10"
@@ -92,8 +90,6 @@ export default function ContactUs() {
           </div>
         </div>
       </div>
-
-
     </section>
   );
 }

@@ -28,7 +28,7 @@ export default function ChairmanMessage() {
         <div className="text-center grid gap-8 w-[90%] mx-auto mt-16">
           <p>
             {" "}
-            <span className="text-[#26ACE2] text-3xl">A</span>s Chairman of
+            <span className="text-[#26ACE2] text-3xl">A</span>s a Chairman of
             Epeak Expedition, I extend my heartfelt congratulations to our
             mountain submitters—your triumphs inspire us all. To travel
             enthusiasts, our commitment goes beyond summits, it's about

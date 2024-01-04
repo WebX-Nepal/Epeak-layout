@@ -4,13 +4,13 @@ import heli from "./assets/heli.jpg";
 import { Icon } from "@iconify/react";
 
 
-export default function ActivitiesFirst({title,content,icon}) {
+export default function ActivitiesFirst({title,content,icon ,photo}) {
   return (
     <>
     <Navbar/>
     <div>
           <div
-        style={{ backgroundImage: `url(${heli})` }}
+        style={{ backgroundImage: `url(${photo})` }}
         className="h-[70vh] bg-center "
       >
         <div className="w-full h-full bg-black/30">

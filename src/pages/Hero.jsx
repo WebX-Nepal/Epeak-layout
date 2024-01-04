@@ -59,7 +59,7 @@ export default function Hero() {
       <OurExpedition />
       <Package />
       <OurBlog />
-      <FrequentlyAsk />
+      {/* <FrequentlyAsk /> */}
       <Testimonial />
 
       <LastFooter />

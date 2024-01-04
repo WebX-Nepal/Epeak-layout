@@ -12,7 +12,7 @@ import ref6 from "./assets/rafting/ref6.png";
 import ref7 from "./assets/rafting/ref7.png";
 import ref8 from "./assets/rafting/ref8.png";
 import ref9 from "./assets/rafting/ref9.png";
-
+import mountainBike from "./assets/mountainBike.jpg"
 const rafImg = [ref1, ref2, ref3, ref4, ref5, ref6, ref7, ref8, ref9];
 export default function MountaibBike() {
   return (
@@ -21,7 +21,7 @@ export default function MountaibBike() {
       <div className="px-16 py-32    ">
         <div
           className="h-[40vh] bg-cover bg-center rounded-3xl flex flex-col justify-center items-center"
-          style={{ backgroundImage: `url(${rafting})` }}
+          style={{ backgroundImage: `url(${mountainBike})` }}
         >
           <div className="h-[50%]"></div>
           <div className="flex flex-col items-center">

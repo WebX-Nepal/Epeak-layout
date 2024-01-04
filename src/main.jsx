@@ -34,64 +34,70 @@ import EasternNepalTrek from "./pages/Trekking/EasternNepalTrek.jsx";
 import WesternNepalTrek from "./pages/Trekking/WesternNepalTrek.jsx";
 import TransHimalayaTrek from "./pages/Trekking/TransHimalayaTrek.jsx";
 import Rafting from "./pages/OtherActivities/Rafting.jsx";
+import Certificate from "./pages/company/Certificate.jsx";
+import Blog from "./pages/company/Blog.jsx";
+import Attorney from "./pages/company/Attorney.jsx";
 ReactDOM.createRoot(document.getElementById("root")).render(
   <BrowserRouter>
     {/* <React.StrictMode> */}
-      {/* <Navbar/> */}
+    {/* <Navbar/> */}
 
+    <Routes>
+      <Route element={<App />} path="/"></Route>
+      <Route element={<Everestdetails />} path="/everest"></Route>
+      <Route element={<Dhaulagiri />} path="/dhaulagiri"></Route>
+      {/* useful info */}
+      <Route element={<GearList />} path="/gearlist"></Route>
+      <Route
+        element={<TermsAndConditions />}
+        path="/terms-and-conditon"
+      ></Route>
+      <Route element={<Garbage />} path="/garbage"></Route>
+      <Route element={<TravelAdvisory />} path="/travel-advisory"></Route>
+      <Route element={<FixedDeparture />} path="/fixed-departure"></Route>
+      <Route element={<VisaProcedure />} path="/visa-procedure"></Route>
+      <Route
+        element={<InquiryBookPayment />}
+        path="/inquiry-booking-payment"
+      ></Route>
+      <Route element={<FAQ></FAQ>} path="/FAQ"></Route>
 
-      <Routes>
-        <Route element={<App />} path="/"></Route>
-        <Route element={<Everestdetails />} path="/everest"></Route>
-        <Route element={<Dhaulagiri />} path="/dhaulagiri"></Route>
-        {/* useful info */}
-        <Route element={<GearList />} path="/gearlist"></Route>
-        <Route
-          element={<TermsAndConditions />}
-          path="/terms-and-conditon"
-        ></Route>
-        <Route element={<Garbage />} path="/garbage"></Route>
-        <Route element={<TravelAdvisory />} path="/travel-advisory"></Route>
-        <Route element={<FixedDeparture />} path="/fixed-departure"></Route>
-        <Route element={<VisaProcedure />} path="/visa-procedure"></Route>
-        <Route
-          element={<InquiryBookPayment />}
-          path="/inquiry-booking-payment"
-        ></Route>
-        <Route element={<FAQ></FAQ>} path="/FAQ"></Route>
+      {/* Other activities */}
+      <Route element={<HeliTours />} path="/helitours"></Route>
+      <Route element={<Paragliding />} path="/paragliding"></Route>
+      <Route element={<MountaibBike />} path="/mountain-bike"></Route>
+      <Route element={<CityTour />} path="/citytour"></Route>
+      <Route element={<Rafting />} path="/rafting" />
+      {/* company */}
+      <Route element={<Aboutus />} path="/aboutus"></Route>
+      <Route element={<ContactUs />} path="/contactus"></Route>
+      <Route element={<ChairmanMessage />} path="/chairman-message"></Route>
+      <Route element={<OurTeam />} path="/our-team" />
+      <Route element={<Certificate />} path="/certificates" />
+      <Route element={<Blog />} path="/blog" />
+      <Route element={<Attorney />} path="/attorney" />
+      {/* Trekking */}
+      <Route element={<AnnapurnaRegion />} path="/trekking/annapurna-region" />
+      <Route
+        element={<EverestRolwaling />}
+        path="/trekking/everest-rolwaling"
+      />
+      <Route element={<LangtangHelambu />} path="/trekking/langtang-helambu" />
+      <Route element={<MustangTrek />} path="/trekking/mustang" />
+      <Route element={<GorkhaManasluTrek />} path="/trekking/gorkha-manaslu" />
 
-        {/* Other activities */}
-        <Route element={<HeliTours />} path="/helitours"></Route>
-        <Route element={<Paragliding />} path="/paragliding"></Route>
-        <Route element={<MountaibBike />} path="/mountain-bike"></Route>
-        <Route element={<CityTour />} path="/citytour"></Route>
-        <Route element={<Rafting/>} path="/rafting"/>
-        {/* company */}
-        <Route element={<Aboutus />} path="/aboutus"></Route>
-        <Route element={<ContactUs />} path="/contactus"></Route>
-        <Route element={<ChairmanMessage />} path="/chairman-message"></Route>
-        <Route element={<OurTeam />} path="/our-team" />
+      <Route element={<RestrictedAreaTrek />} path="/trekking/restrictedArea" />
+      <Route element={<EasternNepalTrek />} path="/trekking/easternNepal" />
+      <Route element={<WesternNepalTrek />} path="/trekking/westernNepal" />
+      <Route element={<TransHimalayaTrek />} path="/trekking/trans-himalaya" />
 
-        {/* Trekking */}
-        <Route element={<AnnapurnaRegion/>} path="/trekking/annapurna-region"/>
-      <Route element={<EverestRolwaling/>} path="/trekking/everest-rolwaling" />
-      <Route element={<LangtangHelambu/>} path="/trekking/langtang-helambu" />
-      <Route element={<MustangTrek/>} path="/trekking/mustang" />
-      <Route element={<GorkhaManasluTrek/>} path="/trekking/gorkha-manaslu" />
-      
-      <Route element={<RestrictedAreaTrek/>} path="/trekking/restrictedArea" />
-      <Route element={<EasternNepalTrek/>} path="/trekking/easternNepal" />
-      <Route element={<WesternNepalTrek/>} path="/trekking/westernNepal" />
-      <Route element={<TransHimalayaTrek/>} path="/trekking/trans-himalaya" />
+      {/* expedtion */}
+      <Route element={<FiveErs />} path="/expedition/5000ers" />
+      <Route element={<SixErs />} path="/expedition/6000ers" />
+      <Route element={<SevenErs />} path="/expedition/7000ers" />
+      <Route element={<EightErs />} path="/expedition/8000ers" />
+    </Routes>
 
-
-        {/* expedtion */}
-        <Route element={<FiveErs/>} path="/expedition/5000ers"/>
-        <Route element={<SixErs/>} path="/expedition/6000ers"/>
-        <Route element={<SevenErs/>} path="/expedition/7000ers"/>
-        <Route element={<EightErs/>} path="/expedition/8000ers"/>
-      </Routes>
-      
     {/* 
     
     </React.StrictMode>

@@ -1,4 +1,5 @@
 import what from "./assets/what.png";
+import { Icon } from "@iconify/react";
 import { useState } from "react";
 export default function FrequentlyAsk() {
   const ques1 = [
@@ -151,6 +152,10 @@ export default function FrequentlyAsk() {
           ))}
         </div>
       </div>
+      <div className="flex items-center gap-1 cursor-pointer text-sm justify-center mt-8 bg-white rounded-3xl shadow-2xl">
+          <Icon width={16} icon="mdi:eye" />
+          View All
+        </div>
     </div>
   );
 }

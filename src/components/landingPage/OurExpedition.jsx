@@ -148,7 +148,7 @@ export default function OurExpedition() {
 
   const [activeExpedition, setActiveExpedtion] = useState(true);
   return (
-    <div className=" py-16  ">
+    <div className=" pt-16  ">
       <div className="  font-semibold text-4xl text-center bg-[#f7f7f7] pt-8 pb-8 ">
         <h2>
           Our
@@ -249,7 +249,7 @@ export default function OurExpedition() {
         </div>
       </div>
 
-      <div className=" py-32 bg-white w-full flex items-center justify-center rounded-xl">
+      <div className="  bg-white w-full flex items-center justify-center rounded-xl">
         <video className=" "  autoPlay loop muted >
           <source src={movie} type="video/mp4" />
         </video>

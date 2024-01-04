@@ -10,6 +10,8 @@ import tem4 from "./assets/ourteam/tem4.png";
 import tem5 from "./assets/ourteam/tem5.png";
 import tem6 from "./assets/ourteam/tem6.png";
 export default function OurTeam() {
+
+  
   const teamDatas = [
     {
       name: "Pasang Limbu",
