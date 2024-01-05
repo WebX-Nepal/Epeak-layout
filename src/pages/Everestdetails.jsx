@@ -292,7 +292,7 @@ export default function Everestdetails() {
               <Icon icon="mdi:dangerous" />
               Cost Excludes
             </li>
-            <li className="flex items-center gap-2">
+            <li className="flex items-center gap-2 d">
               <Icon icon="simple-line-icons:calender" />
               Fixed Date
             </li>

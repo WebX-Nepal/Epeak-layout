@@ -1,14 +1,8 @@
 import Navbar from "../components/Navbar/Navbar";
-import Footer from "../components/footer/Footer";
-import LastFooter from "../components/landingPage/Last";
-import range from "./assets/range.jpg";
 import { Icon } from "@iconify/react";
-import { useState } from "react";
-import Select from "react-select";
 import contact from "../assets/contact.jpg";
 import Snowfall from "react-snowfall";
 export default function ContactUs() {
-  const [selectedOption, setSelectedOption] = useState(null);
   return (
     <section>
       <Navbar backgroundTransparent={true} />

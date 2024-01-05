@@ -37,6 +37,7 @@ import Rafting from "./pages/OtherActivities/Rafting.jsx";
 import Certificate from "./pages/company/Certificate.jsx";
 import Blog from "./pages/company/Blog.jsx";
 import Attorney from "./pages/company/Attorney.jsx";
+import BookNow from "./pages/BookNow.jsx";
 ReactDOM.createRoot(document.getElementById("root")).render(
   <BrowserRouter>
     {/* <React.StrictMode> */}
@@ -96,7 +97,12 @@ ReactDOM.createRoot(document.getElementById("root")).render(
       <Route element={<SixErs />} path="/expedition/6000ers" />
       <Route element={<SevenErs />} path="/expedition/7000ers" />
       <Route element={<EightErs />} path="/expedition/8000ers" />
+
+
+    {/* others */}
+    <Route element={<BookNow />} path="/book-now" />
     </Routes>
+
 
     {/* 
     
