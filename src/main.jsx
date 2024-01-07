@@ -38,6 +38,7 @@ import Certificate from "./pages/company/Certificate.jsx";
 import Blog from "./pages/company/Blog.jsx";
 import Attorney from "./pages/company/Attorney.jsx";
 import BookNow from "./pages/BookNow.jsx";
+import RequestBooking from "./pages/RequestBooking.jsx";
 ReactDOM.createRoot(document.getElementById("root")).render(
   <BrowserRouter>
     {/* <React.StrictMode> */}
@@ -101,6 +102,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
 
     {/* others */}
     <Route element={<BookNow />} path="/book-now" />
+    <Route element = {<RequestBooking/>} path="/request-booking"  />
     </Routes>
 
 

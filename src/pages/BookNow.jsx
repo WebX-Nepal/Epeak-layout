@@ -74,27 +74,40 @@ export default function BookNow() {
   ];
 
   return (
-    <section>
+    <section className="bg-[#f7f7f7]">
       <Navbar />
 
-      <div className="p-32">
-        <h3>Personal Detail</h3>
-        <form action="">
-          <div>
+      <div className="p-32 ">
+        <h3 className="text-4xl  font-semibold mb-4">Personal Detail</h3>
+        <div>
+          
+        </div>
+        <form action="" className="bg-white p-16 flex flex-col gap-4 ">
+         <div className="grid grid-cols-2 gap-16">
+
+          <div className="flex flex-col">
             <label htmlFor="">Name:</label>
-            <input type="" placeholder="Full Name*" />
+            <input type="" placeholder="Full Name*" className="border h-10" />
           </div>
-          <div>
+          <div className="flex flex-col">
             <label htmlFor="">Email:</label>
-            <input type="" placeholder="Email Address*" />
+            <input
+              type=""
+              placeholder="Email Address*"
+              className="border h-10"
+              />
           </div>
-          <div>
+              </div>
+
+              <div className="grid grid-cols-2 gap-16">
+
+          <div className="flex flex-col">
             <label htmlFor="">Phone:</label>
-            <input type="" placeholder="Phone Number*" />
-          </div>
-          <div>
-            <label htmlFor="">Country:</label>
-            <input type="" placeholder="Address*" />
+            <input
+              type=""
+              placeholder="Phone Number*"
+              className="border h-10"
+            />
           </div>
 
           <div>
@@ -103,21 +116,27 @@ export default function BookNow() {
               options={options}
               value={country}
               onChange={changeHandler}
-            />
+              />
           </div>
+              </div>
           {/* Trip */}
           <div>
-            <h3> Trip Detail</h3>
-            <div onClick={() => selectTripList(true)}>
-              <input type="radio" name="trip"  />{" "}
-            </div>
-            <label htmlFor="">Expedition</label>
+            <h3 className="text-2xl font-semibold mb-2"> Trip Detail</h3>
+            <div className="flex gap-16">
+              <div className="flex items-center gap-1">
+                <div onClick={() => selectTripList(true)}>
+                  <input type="radio" name="trip" className="cursor-pointer" />{" "}
+                </div>
+                <label htmlFor="">Expedition</label>
+              </div>
 
-            <div onClick={() => selectTripList(false)}>
-              <input type="radio" name="trip"  />{" "}
-              
+              <div className="flex items-center gap-1">
+                <div onClick={() => selectTripList(false)}>
+                  <input type="radio"  name="trip" className="cursor-pointer" />{" "}
+                </div>
+                <label htmlFor="">Trekking</label>
+              </div>
             </div>
-            <label htmlFor="">Trekking</label>
           </div>
           {tripList && (
             <Select
@@ -133,30 +152,32 @@ export default function BookNow() {
               options={trekkingList}
             />
           )}
+<div className="flex gap-16">
 
-          <div>
+          <div className="flex gap-2">
             <label htmlFor="">Arrival Date</label>
             <DatePicker
               className="border border-black"
               selected={startDate}
               onChange={(date) => setStartDate(date)}
-            />
+              />
           </div>
-          <div>
+          <div className="flex gap-2">
             <label htmlFor="">Final Depature Date </label>
             <DatePicker
               className="border border-black"
               selected={finalDate}
               onChange={(date) => setFinalDate(date)}
               minDate={new Date()}
-            />
+              />
           </div>
+              </div>
           <div>
             <input type="checkbox" />{" "}
             <label htmlFor=""> I accept terms and Conditions</label>
           </div>
 
-          <button className="bg-[#273B91] text-white px-5 py-2 rounded-xl">
+          <button className="bg-[#273B91] max-w-xs text-white px-5 py-2 rounded-xl">
             Submit
           </button>
         </form>
