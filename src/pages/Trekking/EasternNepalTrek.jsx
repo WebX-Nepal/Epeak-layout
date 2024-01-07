@@ -12,13 +12,10 @@ const  easternNepalList= [
       photo: annapurna,
     },
     {id:3,
-      title: " Makalu Base Camp to Everest",
+      title: " Makalu Base Camp ",
       photo: annapurna,
     },
-    {id:4,
-      title: "Makalu Base Camp trek via Shipton",
-      photo: annapurna,
-    },
+   
     
     
   ];

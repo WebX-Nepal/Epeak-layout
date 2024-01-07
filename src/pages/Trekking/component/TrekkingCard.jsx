@@ -1,8 +1,12 @@
 import { useState } from "react";
 import annapurna from "../assets/annapurna/annapurna.jpg";
-
+import { useDispatch } from "react-redux";
+import { Link } from "react-router-dom";
+import { addTitle } from "../../../store/requestBookingSlice";
 export default function TrekkingCard({ title, photo }) {
   const [showBookNow, setShowBookNow] = useState(true);
+
+  const dispatch = useDispatch();
   return (
     <div
       onMouseEnter={() => setShowBookNow}
@@ -16,16 +20,25 @@ export default function TrekkingCard({ title, photo }) {
           <div className="bg-[#26ACE2] p-1 text-white inline">
             Trekking walking in Nepal
           </div>
-          <div
-            className={`bg-[#26ACE2] p-1 text-white  ${
-              showBookNow ? "inline" : "hidden"
-            } `}
+
+          <Link
+            to={"/itineary"}
+            onClick={() => {
+              scrollTo(0, 0);
+              dispatch(addTitle(title));
+            }}
           >
-            Book Now{" "}
-          </div>
+            <div
+              className={`bg-[#26ACE2] p-1 text-white  ${
+                showBookNow ? "inline" : "hidden"
+              } `}
+            >
+              Book Now{" "}
+            </div>
+          </Link>
         </div>
       </div>
-      <div className="p-3 font-semibold">{title}</div>
+      <div className="p-3 font-semibold  capitalize">{title}</div>
     </div>
   );
 }

@@ -1,7 +1,8 @@
-import everestlevel from "../assets/everest/everestlevel.svg";
+/* eslint-disable react/prop-types */
+import everestlevel from "../../assets/everest/everestlevel.svg";
 import { Icon } from "@iconify/react";
 
-export default function DetailSecond() {
+export default function DetailSecond({details}) {
   return (
     <div className="bg-[#444444]  h-[60vh] px-40 py-12  flex justify-center gap-20">
     {/* part 1 */}
@@ -64,11 +65,11 @@ export default function DetailSecond() {
         <p>Group Size:</p>
       </div>
       <div className="flex flex-col items-end gap-8">
-        <p>8,848.86m / 29,032ft</p>
-        <p>5 - 7 Hours</p>
-        <p>Hotel + Lodge + Tent</p>
-        <p>Spring</p>
-        <p>2-15 PAX</p>
+        <p>{details.maxElevation} </p>
+        <p>{details.walkingPerDay}</p>
+        <p>{details.Accommodation}</p>
+        <p>{details.BestSeason}</p>
+        <p>{details.groupSize}</p>
       </div>
     </div>
     {/* part 3 */}

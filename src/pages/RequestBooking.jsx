@@ -7,6 +7,7 @@ import countryList from "react-select-country-list";
 import DatePicker from "react-datepicker";
 
 import "react-datepicker/dist/react-datepicker.css";
+import { useSelector } from "react-redux";
 export default function RequestBooking({selectedPackage}) {
   const [country, setCountry] = useState("");
   const options = useMemo(() => countryList().getData(), []);
@@ -18,6 +19,11 @@ export default function RequestBooking({selectedPackage}) {
   const changeHandler = (value) => {
     setCountry(value);
   };
+
+
+  const reqTitle = useSelector((state)=>state.requestBooking)
+  console.log(reqTitle.requestTitle
+    ,"from req booking ")
   return (
     <section className="bg-[#f7f7f7]">
       <Navbar />
@@ -67,7 +73,7 @@ export default function RequestBooking({selectedPackage}) {
               <label htmlFor="" className="font-semibold">Your Package</label>
               <input
                 type="text"
-                value={selectedPackage}
+                value={reqTitle.requestTitle}
                 className="border border-green-400 h-10 lg:w-[70%]"
               />
             </div>

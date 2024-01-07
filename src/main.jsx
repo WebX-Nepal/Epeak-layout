@@ -39,7 +39,14 @@ import Blog from "./pages/company/Blog.jsx";
 import Attorney from "./pages/company/Attorney.jsx";
 import BookNow from "./pages/BookNow.jsx";
 import RequestBooking from "./pages/RequestBooking.jsx";
+import { Provider } from "react-redux";
+import store from "./store/store.js";
+import Itineary from "./pages/Itineary.jsx";
 ReactDOM.createRoot(document.getElementById("root")).render(
+
+  <Provider store={store}>
+
+  
   <BrowserRouter>
     {/* <React.StrictMode> */}
     {/* <Navbar/> */}
@@ -88,7 +95,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
       <Route element={<MustangTrek />} path="/trekking/mustang" />
       <Route element={<GorkhaManasluTrek />} path="/trekking/gorkha-manaslu" />
 
-      <Route element={<RestrictedAreaTrek />} path="/trekking/restrictedArea" />
+      <Route element={<RestrictedAreaTrek />} path="/trekking/great-Himalayan" />
       <Route element={<EasternNepalTrek />} path="/trekking/easternNepal" />
       <Route element={<WesternNepalTrek />} path="/trekking/westernNepal" />
       <Route element={<TransHimalayaTrek />} path="/trekking/trans-himalaya" />
@@ -103,6 +110,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     {/* others */}
     <Route element={<BookNow />} path="/book-now" />
     <Route element = {<RequestBooking/>} path="/request-booking"  />
+    <Route element = { <Itineary/> } path="/itineary"/>
     </Routes>
 
 
@@ -111,4 +119,5 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     </React.StrictMode>
     */}
   </BrowserRouter>
+  </Provider>
 );

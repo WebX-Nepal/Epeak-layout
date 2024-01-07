@@ -43,9 +43,9 @@ export default function Trekking({ setShowTrekking }) {
           <Link to={"/trekking/gorkha-manaslu"} onClick={gotop}>
           <li className="border-b-2 pb-1 whitespace-nowrap hover:text-slate-400"> gorkha manaslu trek </li>
           </Link>
-          <Link to={"/trekking/restrictedArea"} onClick={gotop}>
+          <Link to={"/trekking/great-Himalayan"} onClick={gotop}>
 
-          <li className="border-b-2 pb-1 whitespace-nowrap hover:text-slate-400"> restricted area trekking </li>
+          <li className="border-b-2 pb-1 whitespace-nowrap hover:text-slate-400"> Great Himalayan Trail </li>
           </Link>
           <Link to={"/trekking/easternNepal" } onClick={gotop}>
           <li className="border-b-2 pb-1 whitespace-nowrap hover:text-slate-400"> eastern nepal trekking </li>

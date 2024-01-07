@@ -46,6 +46,8 @@ export default function EightErs() {
           photo: "annapurna",
         },
       ];
+
+     
   return (
     <>
     <ExpeditionHero title={"Above 8000m Peak in Nepal Himalayas"} />

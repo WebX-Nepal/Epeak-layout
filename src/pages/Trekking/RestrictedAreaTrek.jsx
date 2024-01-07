@@ -2,15 +2,12 @@ import LastFooter from "../../components/landingPage/Last";
 import annapurna from "./assets/annapurna/annapurna.jpg";
 import TrekkingHero from "./component/TrekkingHero";
 import TrekkingTrips from "./component/TrekkingTrips";
-const restrictedAreaList = [
+const  greatHimilayanTrail= [
     {id:1,
-      title: "Makalu Base Camp Trek ",
+      title: "Great Himilayan Trek",
       photo: annapurna,
     },
-    {id:2,
-      title: ": Simikot Trekking    ",
-      photo: annapurna,
-    },
+    
    
     
   ];
@@ -18,12 +15,12 @@ export default function RestrictedAreaTrek() {
   return (
     <>
   
-    <TrekkingHero photo={annapurna} title={"Restricted Area Trekking"} />
+    <TrekkingHero photo={annapurna} title={"Great Himalayan Trail"} />
       <div className="px-32 py-16 flex flex-col gap-4 text-justify">
   
       
       <div className=" ">
-        <h3 className="text-2xl text-[#26ACE2]">Restricted Area Trekking</h3>
+        <h3 className="text-2xl text-[#26ACE2]">Great Himalayan Trail</h3>
         <p>
           Welcome to the enchanting world of Langtang & Helambu Trek, Nepal's trekker's
           paradise! Nestled in the heart of the Himalayas, the Annapurna region
@@ -38,7 +35,7 @@ export default function RestrictedAreaTrek() {
   
         
       </div>
-      <TrekkingTrips list={restrictedAreaList}/>
+      <TrekkingTrips list={greatHimilayanTrail}/>
       <LastFooter />
     </>
   )
