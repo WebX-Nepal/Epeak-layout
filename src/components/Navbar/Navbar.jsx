@@ -26,7 +26,7 @@ export default function Navbar({backgroundTransparent=false}) {
   useEffect(() => {
     setMyHeight(window.scrollY);
 
-    if (window.innerHeight > myHeight + 100) {
+    if (window.innerHeight > myHeight + 500) {
       setTheBackground(true);
       console.log("true", window.scrollY);
     } else {

@@ -79,19 +79,19 @@ export default function RequestBooking({selectedPackage}) {
             </div>
           </div>
 
-          <div className="flex gap-16">
-            <div className="flex gap-2">
+          <div className="flex gap-32">
+            <div className="flex items-center ">
               <label htmlFor="">Arrival Date</label>
               <DatePicker
-                className="border border-black"
+                className="border border-black ml-2  outline-blue-400 p-1 "
                 selected={startDate}
                 onChange={(date) => setStartDate(date)}
               />
             </div>
-            <div className="flex gap-2">
+            <div className="flex gap-2 items-center">
               <label htmlFor="">Final Depature Date </label>
               <DatePicker
-                className="border border-black"
+                className="border border-black  outline-blue-400 p-1"
                 selected={finalDate}
                 onChange={(date) => setFinalDate(date)}
                 minDate={new Date()}

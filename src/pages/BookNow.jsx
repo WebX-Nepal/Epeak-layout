@@ -79,46 +79,42 @@ export default function BookNow() {
 
       <div className="p-32 ">
         <h3 className="text-4xl  font-semibold mb-4">Personal Detail</h3>
-        <div>
-          
-        </div>
+        <div></div>
         <form action="" className="bg-white p-16 flex flex-col gap-4 ">
-         <div className="grid grid-cols-2 gap-16">
-
-          <div className="flex flex-col">
-            <label htmlFor="">Name:</label>
-            <input type="" placeholder="Full Name*" className="border h-10" />
-          </div>
-          <div className="flex flex-col">
-            <label htmlFor="">Email:</label>
-            <input
-              type=""
-              placeholder="Email Address*"
-              className="border h-10"
+          <div className="grid grid-cols-2 gap-16">
+            <div className="flex flex-col">
+              <label htmlFor="">Name:</label>
+              <input type="" placeholder="Full Name*" className="border h-10" />
+            </div>
+            <div className="flex flex-col">
+              <label htmlFor="">Email:</label>
+              <input
+                type=""
+                placeholder="Email Address*"
+                className="border h-10"
               />
-          </div>
-              </div>
-
-              <div className="grid grid-cols-2 gap-16">
-
-          <div className="flex flex-col">
-            <label htmlFor="">Phone:</label>
-            <input
-              type=""
-              placeholder="Phone Number*"
-              className="border h-10"
-            />
+            </div>
           </div>
 
-          <div>
-            <label htmlFor="">Country</label>
-            <Select
-              options={options}
-              value={country}
-              onChange={changeHandler}
+          <div className="grid grid-cols-2 gap-16">
+            <div className="flex flex-col">
+              <label htmlFor="">Phone:</label>
+              <input
+                type=""
+                placeholder="Phone Number*"
+                className="border h-10"
               />
+            </div>
+
+            <div>
+              <label htmlFor="">Country</label>
+              <Select
+                options={options}
+                value={country}
+                onChange={changeHandler}
+              />
+            </div>
           </div>
-              </div>
           {/* Trip */}
           <div>
             <h3 className="text-2xl font-semibold mb-2"> Trip Detail</h3>
@@ -132,7 +128,7 @@ export default function BookNow() {
 
               <div className="flex items-center gap-1">
                 <div onClick={() => selectTripList(false)}>
-                  <input type="radio"  name="trip" className="cursor-pointer" />{" "}
+                  <input type="radio" name="trip" className="cursor-pointer" />{" "}
                 </div>
                 <label htmlFor="">Trekking</label>
               </div>
@@ -152,26 +148,25 @@ export default function BookNow() {
               options={trekkingList}
             />
           )}
-<div className="flex gap-16">
-
-          <div className="flex gap-2">
-            <label htmlFor="">Arrival Date</label>
-            <DatePicker
-              className="border border-black"
-              selected={startDate}
-              onChange={(date) => setStartDate(date)}
+          <div className="flex gap-32">
+            <div className="flex items-center ">
+              <label htmlFor="">Arrival Date</label>
+              <DatePicker
+                className="border border-black ml-2  outline-blue-400 p-1 "
+                selected={startDate}
+                onChange={(date) => setStartDate(date)}
               />
-          </div>
-          <div className="flex gap-2">
-            <label htmlFor="">Final Depature Date </label>
-            <DatePicker
-              className="border border-black"
-              selected={finalDate}
-              onChange={(date) => setFinalDate(date)}
-              minDate={new Date()}
+            </div>
+            <div className="flex gap-2 items-center">
+              <label htmlFor="">Final Depature Date </label>
+              <DatePicker
+                className="border border-black  outline-blue-400 p-1"
+                selected={finalDate}
+                onChange={(date) => setFinalDate(date)}
+                minDate={new Date()}
               />
+            </div>
           </div>
-              </div>
           <div>
             <input type="checkbox" />{" "}
             <label htmlFor=""> I accept terms and Conditions</label>
