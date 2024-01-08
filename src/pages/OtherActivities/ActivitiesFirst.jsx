@@ -17,7 +17,7 @@ export default function ActivitiesFirst({title,content,icon ,photo}) {
           <div className="w-[50%]  my-auto h-full pl-11 flex flex-col items-center  justify-center text-5xl">
             <div>
               <Icon width={50} color="264166" icon={icon} className=" " />
-              <p className="text-white font-bold font-poppins">{title}</p>
+              <p className="text-white font-bold font-poppins">{title} </p>
             </div>
           </div>
         </div>

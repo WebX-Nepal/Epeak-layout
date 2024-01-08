@@ -11,7 +11,7 @@ export default function ExpeditionTrip({ list }) {
 
       <div className="grid grid-cols-3 max-md:grid-cols-1 gap-8 place-content-center  place-items-center">
         {list.map((lis) => (
-          <ExpeditionCard title={lis.name} photo={lis.photo} key={lis.title} />
+          <ExpeditionCard title={lis.name} height={lis.height}  photo={lis.photo} key={lis.title} />
         ))}
       </div>
     </div>

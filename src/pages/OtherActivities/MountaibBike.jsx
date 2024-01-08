@@ -13,6 +13,8 @@ import ref7 from "./assets/rafting/ref7.png";
 import ref8 from "./assets/rafting/ref8.png";
 import ref9 from "./assets/rafting/ref9.png";
 import mountainBike from "./assets/mountainBike.jpg"
+import { Link } from "react-router-dom";
+
 const rafImg = [ref1, ref2, ref3, ref4, ref5, ref6, ref7, ref8, ref9];
 export default function MountaibBike() {
   return (
@@ -28,9 +30,11 @@ export default function MountaibBike() {
             <p className="text-white text-center mb-4 text-3xl font-semibold">
               Mountain Bike
             </p>
+            <Link to={'/contactus'}>
             <button className="text-white bg-[#26ACE2] px-5 py-2 rounded-3xl">
               Book Now
             </button>
+            </Link>
           </div>
         </div>
 

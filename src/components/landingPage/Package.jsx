@@ -2,6 +2,7 @@ import { useState } from "react";
 import PackageCard from "./PackageCard";
 import mountain from "./assets/mountain.png";
 import { Icon } from "@iconify/react";
+import { Link } from "react-router-dom";
 export default function Package() {
   const [season, setSeason] = useState("1");
   return (
@@ -19,9 +20,11 @@ export default function Package() {
               If you have packed ypur bag and ready for the dream of submitting
               the Highest peak of the mountain.
             </p>
+            <Link to={'book-now'} onClick={()=>scrollTo(0,0)}>
             <button className="text-white w-[200px]  rounded-3xl  px-8 py-3 bg-blue-800">
               Book Now{" "}
             </button>
+            </Link>
           </div>
         </div>
         {/* explore */}

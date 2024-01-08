@@ -6,11 +6,22 @@ import "slick-carousel/slick/slick-theme.css";
 import Group from "./assets/Group.png";
 export default function Testimonial() {
   const settings = {
+    // dots: true,
+
+    // infinite: true,
+    // speed: 500,
+    // slidesToShow: 1,
+    // slidesToScroll: 1,
+    // arrows: false,
+    // autoplay: true,
+
     dots: true,
     infinite: true,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
+    autoPlaySpeed: 500,
+    autoplay: true,
     arrows: false,
   };
   return (

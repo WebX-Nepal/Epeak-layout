@@ -2,7 +2,7 @@ import Navbar from "../../components/Navbar/Navbar";
 import Footer from "../../components/footer/Footer";
 import LastFooter from "../../components/landingPage/Last";
 import rafting from "./assets/rafting.png";
-
+import { Link } from "react-router-dom";
 import ref1 from "./assets/rafting/ref1.png";
 import ref2 from "./assets/rafting/ref2.png";
 import ref3 from "./assets/rafting/ref3.png";
@@ -28,9 +28,11 @@ export default function Paragliding() {
             <p className="text-white text-center mb-4 text-3xl font-semibold">
               Heli Tours
             </p>
+            <Link to={'/contactus'}>
             <button className="text-white bg-[#26ACE2] px-5 py-2 rounded-3xl">
               Book Now
             </button>
+            </Link>
           </div>
         </div>
 

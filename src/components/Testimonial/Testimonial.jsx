@@ -3,18 +3,31 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 export default function Testimonial() {
   const settings = {
+    // dots: true,
+    // infinite: true,
+    // speed: 500,
+    // slidesToShow: 1,
+    // slidesToScroll: 1,
+    // autoplay: true,
+    // autoplaySpeed: 2000,
+
     dots: true,
     infinite: true,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
+    autoPlaySpeed: 500,
+    autoplay: true,
+    arrows: false,
   };
   return (
     <div className="w-[80%] mx-auto flex  flex-col ">
-      <h2 className="text-4xl font-Cormorant font-semibold text-center   ">Testimonial</h2>
+      <h2 className="text-4xl font-Cormorant font-semibold text-center   ">
+        Testimonial
+      </h2>
 
       <div>
-        <Slider {...settings}>
+        {/* <Slider {...settings}>
           <div>
             <h3>
               {" "}
@@ -39,7 +52,8 @@ export default function Testimonial() {
           <div>
             <h3>6</h3>
           </div>
-        </Slider>
+        </Slider> */}
+        
       </div>
     </div>
   );

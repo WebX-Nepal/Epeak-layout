@@ -31,7 +31,7 @@ export default function Usefulinfo({ setShowUseful }) {
         <Link to="/visa-procedure" onClick={topScreen}>
           <h4 className="border-b cursor-pointer hover:text-slate-400  pb-2">Visa Procedure/Fees</h4>
         </Link>
-        <Link to="/inquiry-booking-payment" onClick={topScreen}>
+        <Link to="/book-now" onClick={topScreen}>
           <h4 className="border-b cursor-pointer hover:text-slate-400  pb-2">Inquiry/Booking/Paymenet</h4>
         </Link>
         <Link to="/FAQ">

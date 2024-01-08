@@ -26,36 +26,62 @@ export default function Trekking({ setShowTrekking }) {
       onMouseLeave={() => setShowTrekking(false)}
       className="absolute   text-black rounded-b-md bg-white z-10 top-20 right-4/4   font-poppins   p-4 flex"
     >
-      <div className="flex flex-col gap-1  cursor-pointer capitalize">
+      <div className="flex flex-col gap-2  cursor-pointer capitalize">
         <ul className="text-base  flex flex-col ">
-          <Link to="/trekking/annapurna-region"   onClick={gotop}>
-          <li className="border-b-2 pb-1 whitespace-nowrap hover:text-slate-400 "> Annapurna Trekking</li>
+          <Link to="/trekking/annapurna-region" onClick={gotop}>
+            <li className="border-b-2 py-2 whitespace-nowrap hover:text-slate-400 ">
+              {" "}
+              Annapurna Trekking
+            </li>
           </Link>
           <Link to={"/trekking/everest-rolwaling"} onClick={gotop}>
-          <li className="border-b-2 pb-1 whitespace-nowrap hover:text-slate-400"> everest and rolwaling trekking </li>
+            <li className="border-b-2 py-2 whitespace-nowrap hover:text-slate-400">
+              {" "}
+              everest and rolwaling trekking{" "}
+            </li>
           </Link>
           <Link to={"/trekking/langtang-helambu"} onClick={gotop}>
-          <li className="border-b-2 pb-1 whitespace-nowrap hover:text-slate-400"> langtang & helambu trek </li>
+            <li className="border-b-2 py-2 whitespace-nowrap hover:text-slate-400">
+              {" "}
+              langtang & helambu trek{" "}
+            </li>
           </Link>
           <Link to={"/trekking/mustang"} onClick={gotop}>
-          <li className="border-b-2 pb-1 whitespace-nowrap hover:text-slate-400"> mustang trekking </li>
+            <li className="border-b-2 py-2 whitespace-nowrap hover:text-slate-400">
+              {" "}
+              mustang trekking{" "}
+            </li>
           </Link>
           <Link to={"/trekking/gorkha-manaslu"} onClick={gotop}>
-          <li className="border-b-2 pb-1 whitespace-nowrap hover:text-slate-400"> gorkha manaslu trek </li>
+            <li className="border-b-2 py-2 whitespace-nowrap hover:text-slate-400">
+              {" "}
+              gorkha manaslu trek{" "}
+            </li>
           </Link>
-          
-          <Link to={"/trekking/easternNepal" } onClick={gotop}>
-          <li className="border-b-2 pb-1 whitespace-nowrap hover:text-slate-400"> eastern nepal trekking </li>
+
+          <Link to={"/trekking/easternNepal"} onClick={gotop}>
+            <li className="border-b-2 py-2 whitespace-nowrap hover:text-slate-400">
+              {" "}
+              eastern nepal trekking{" "}
+            </li>
           </Link>
           <Link to={"/trekking/westernNepal"} onClick={gotop}>
-          <li className="border-b-2 pb-1 whitespace-nowrap hover:text-slate-400"> western nepal trekking </li>
+            <li className="border-b-2 py-2 whitespace-nowrap hover:text-slate-400">
+              {" "}
+              western nepal trekking{" "}
+            </li>
           </Link>
-          <Link to={"/trekking/trans-himalaya" } onClick={gotop}>
-          <li className="border-b-2 pb-1 whitespace-nowrap hover:text-slate-400"> trans himalaya trekking </li>
+          <Link to={"/trekking/trans-himalaya"} onClick={gotop}>
+            <li className="border-b-2 py-2 whitespace-nowrap hover:text-slate-400">
+              {" "}
+              trans himalaya trekking{" "}
+            </li>
           </Link>
           <Link to={"/trekking/great-Himalayan"} onClick={gotop}>
-
-          <li className="border-b-2 pb-1 whitespace-nowrap hover:text-slate-400"> Great Himalayan Trail </li>
+            <li className="border-b-2 py-2 whitespace-nowrap hover:text-slate-400">
+              {" "}
+              Great Himalayan Trail{" "}
+            </li>
           </Link>
         </ul>
       </div>

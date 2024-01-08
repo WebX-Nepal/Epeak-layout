@@ -8,37 +8,42 @@ export default function TrekkingCard({ title, photo }) {
 
   const dispatch = useDispatch();
   return (
-    <div
-      onMouseEnter={() => setShowBookNow}
-      className="bg-white w-[400px] cursor-pointer"
-    >
+    <Link to={"/itineary"} onClick={()=>{
+      dispatch(addTitle(title));
+      scrollTo(0,0)
+    }}>
       <div
-        className="h-[250px] bg-center bg-cover"
-        style={{ backgroundImage: `url(${photo})` }}
+        onMouseEnter={() => setShowBookNow}
+        className="bg-white w-[400px]  p-4 rounded-xl flex flex-col gap-4 cursor-default"
       >
-        <div className="flex justify-between items-end h-full">
-          <div className="bg-[#26ACE2] p-1 text-white inline">
-            Trekking walking in Nepal
-          </div>
+        <div
+           className="h-[384px] bg-center bg-cover flex gap-8  items-end rounded-xl cursor-pointer"
+          style={{ backgroundImage: `url(${photo})` }}
+        >
+       
 
-          <Link
-            to={"/itineary"}
-            onClick={() => {
-              scrollTo(0, 0);
-              dispatch(addTitle(title));
-            }}
-          >
-            <div
-              className={`bg-[#26ACE2] p-1 text-white  ${
-                showBookNow ? "inline" : "hidden"
-              } `}
-            >
-              Book Now{" "}
-            </div>
+       <div className="bg-white px-2 py-3 w-[75%] mx-auto mb-4 rounded-xl text-center opacity-90 leading-4">
+            <div className="font-semibold  ">{title}</div>
+          </div>
+        </div>
+
+        {/* <div className="p-3 font-semibold">{title} </div> */}
+        <div className="flex justify-center items-center gap-8">
+          <button className="px-5 py-2 border rounded-3xl border-[#26ACE2] text-[#26ACE2]">
+            View Detail
+          </button>
+          <Link   to={"/request-booking"}
+              onClick={() => {
+                scrollTo(0, 0);
+                dispatch(addTitle(title));
+              }}>
+          <button className="px-5 py-2 border rounded-3xl bg-[#26ACE2] text-white ">
+            Book Now
+          </button>
           </Link>
         </div>
-      </div>
-      <div className="p-3 font-semibold  capitalize">{title}</div>
-    </div>
+        </div>
+     
+    </Link>
   );
 }
