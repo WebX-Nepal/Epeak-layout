@@ -43,6 +43,7 @@ import { Provider } from "react-redux";
 import store from "./store/store.js";
 import Itineary from "./pages/Itineary.jsx";
 import BlogPage from "./pages/BlogPage.jsx";
+import ItineraryMain from "./pages/Itinerary/ItineraryMain.jsx";
 ReactDOM.createRoot(document.getElementById("root")).render(
   <Provider store={store}>
     <BrowserRouter>
@@ -122,7 +123,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         {/* others */}
         <Route element={<BookNow />} path="/book-now" />
         <Route element={<RequestBooking />} path="/request-booking" />
-        <Route element={<Itineary />} path={`/itineary/`} />
+        <Route element={<ItineraryMain />} path={`/itineary/`} />
         <Route element={<BlogPage />} path="/read-blog" />
       </Routes>
 
