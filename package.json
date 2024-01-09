@@ -13,6 +13,7 @@
     "@react-spring/parallax": "^9.7.3",
     "@react-spring/web": "^9.7.3",
     "@reduxjs/toolkit": "^2.0.1",
+    "lightgallery": "^2.7.2",
     "react": "^18.2.0",
     "react-datepicker": "^4.25.0",
     "react-dom": "^18.2.0",

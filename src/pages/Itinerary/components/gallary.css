@@ -1,0 +1,5 @@
+.gall LightGallery{
+    display: flex;
+    border: 1px solid black ;
+    color: brown;
+}
